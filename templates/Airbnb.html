@@ -14,9 +14,70 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+  <script src="/static/js/hawaii.js"></script>
+ 
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-693dea59fd2588b3874e0-min.en-US.js" ></script>
+<script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script>
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
 </head>
 
 <body>
+   <div id="mobileNav" data-content-field="navigation-mobileNav">
+      
+  <nav class="main-nav">
+      <div class="nav-wrapper">
+        <ul class="cf">
+            <li class="index-collection folder">
+                <a href="/"><span>Home</span></a>
+            </li>
+            <li class="page-collection">
+              <a href="/new-page"><span>Visualization</span></a>
+            </li>
+            <li class="folders-collection folder active-link active-folder">
+                  <div class="folder-parent">
+                    <a aria-haspopup="true"><span>Hawaiian Islands</span></a>
+                    <div class="folder-child-wrapper">
+                      <ul class="folder-child">
+                            <li class=" active-link">
+                              <a href="Kauai">
+                                <span>Kauai</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="Ohau">
+                                <span>Oahu</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="Maui">
+                                <span>Maui</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="lanai">
+                                <span>Lanai & Molokai</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="bigisland">
+                                <span>Big Island Hawaii</span>
+                              </a>
+                            </li>
+                      </ul>
+                    </div>
+                  </div>
+            </li>
+            <li class="page-collection">
+              <a href="/Airbnb"><span>Airbnb</span></a> 
+            </li>
+      </ul>
+    </div>
+  </nav>
+
+    </div>
+
+    <div class="site-wrapper">
+      <div class="site-inner-wrapper">
 <header id="header" class="sqs-announcement-bar-dropzone">
           <div class="sqs-cart-dropzone"></div>
           <div class="title-nav-wrapper">
@@ -113,6 +174,17 @@
 	</div>
 	
 	<div id="myDiv"></div>
+	
+	   <!--FOOTER WITH OPEN BLOCK FIELD-->
+        <footer id="footer">
+          <div class="back-to-top-link"><a href="#top"><span class="arrow"></span>Top</a></div>
+          <div class="footer-wrapper">
+           
+          
+          </div>
+        </footer>
+		<script data-name="static-context" src="/static/js/hawaii.js"></script>
+ <script src="https://static1.squarespace.com/static/ta/515c7b5ae4b0875140c3d94a/2778/scripts/site-bundle.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
