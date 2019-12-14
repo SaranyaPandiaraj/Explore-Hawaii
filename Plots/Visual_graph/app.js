@@ -1,14 +1,11 @@
-Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
-  // Create a lookup table to sort and regroup the columns of data,
-  // first by year, then by continent:
+Plotly.d3.csv('VisitorsNew.csv', function (err, data) {
+
   var lookup = {};
   function getData(year, island) {
     var byYear, trace;
     if (!(byYear = lookup[year])) {;
       byYear = lookup[year] = {};
     }
-	 // If a container for this year + continent doesn't exist yet,
-	 // then create one:
     if (!(trace = byYear[island])) {
       trace = byYear[island] = {
         x: [],
@@ -20,39 +17,21 @@ Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
     }
     return trace;
   }
-
-  // Go through each row, get the right trace, and append the data:
   for (var i = 0; i < data.length; i++) {
     var datum = data[i];
     var trace = getData(datum.year, datum.island);
-    trace.text.push(datum.country);
-    trace.id.push(datum.country);
     trace.x.push(datum.month);
     trace.y.push(datum.Totalamount);
-    trace.marker.size.push(datum.Totalamount*100);
- 
+    trace.marker.size.push(datum.Totalamount*400);
   }
-
-  // Get the group names:
   var years = Object.keys(lookup);
- 
-  // In this case, every year includes every continent, so we
-  // can just infer the continents from the *first* year:
+
   var firstYear = lookup[years[0]];
   var islands = Object.keys(firstYear);
- 
 
-  console.log(firstYear)
-  console.log(islands)
-  // Create the main traces, one for each continent:
   var traces = [];
   for (i = 0; i < islands.length; i++) {
     var data = firstYear[islands[i]];
-	 // One small note. We're creating a single trace here, to which
-	 // the frames will pass data for the different years. It's
-	 // subtle, but to avoid data reference problems, we'll slice
-	 // the arrays to ensure we never write any new data into our
-	 // lookup table:
     traces.push({
       name: islands[i],
       x: data.x.slice(),
@@ -62,16 +41,9 @@ Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
         size: data.marker.size.slice(),
         sizemode: 'area',
         sizeref: 200000
-
-
       }
     });
   }
-
-  // Create a frame for each year. Frames are effectively just
-  // traces, except they don't need to contain the *full* trace
-  // definition (for example, appearance). The frames just need
-  // the parts the traces that change (here, the data).
   var frames = [];
   for (i = 0; i < years.length; i++) {
     frames.push({
@@ -82,11 +54,6 @@ Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
     })
   console.log(frames)
   }
-
-  // Now create slider steps, one for each frame. The slider
-  // executes a plotly.js API command (here, Plotly.animate).
-  // In this example, we'll animate to one of the named frames
-  // created in the above loop.
   var sliderSteps = [];
   for (i = 0; i < years.length; i++) {
     sliderSteps.push({
@@ -99,20 +66,11 @@ Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
       }]
     });
   }
-
   var layout = {
     yaxis: {
-      title: 'Total amount'
-
+      title: 'Number of visiters'
     },
     hovermode: 'closest',
-	 // We'll use updatemenus (whose functionality includes menus as
-	 // well as buttons) to create a play button and a pause button.
-	 // The play button works by passing `null`, which indicates that
-	 // Plotly should animate all frames. The pause button works by
-	 // passing `[null]`, which indicates we'd like to interrupt any
-	 // currently running animations with a new list of frames. Here
-	 // The new list of frames is empty, so it halts the animation.
     updatemenus: [{
       x: 0,
       y: 0,
@@ -141,8 +99,6 @@ Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
         label: 'Pause'
       }]
     }],
-	 // Finally, add the slider and use `pad` to position it
-	 // nicely next to the buttons.
     sliders: [{
       pad: {l: 130, t: 55},
       currentvalue: {
@@ -154,7 +110,6 @@ Plotly.d3.csv('visitors_month_data.csv', function (err, data) {
       steps: sliderSteps
     }]
   };
-
   // Create the plot:
   Plotly.plot('chart', {
     data: traces,
