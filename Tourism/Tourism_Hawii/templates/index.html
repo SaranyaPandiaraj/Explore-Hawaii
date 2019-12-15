@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Give the web page a title -->
+  <title>Hawaii Airbnb</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dosis:200,200,200,500,600,700,800|Roboto:100,200,200,350i,500,700,700i,900"/>
+<link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/57d20290414fb53b53049131/100/515c7bd0e4b054dae3fcf003/57f585ee9f745612766ee73a/2778-05142015/1536180373479/site.css?&filterFeatures=false"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+</head>
+
+<body>
+  <header id="header" class="sqs-announcement-bar-dropzone">
+    <div class="sqs-cart-dropzone"></div>
+      <div class="title-nav-wrapper">
+        <h1 data-content-field="site-title" class="site-title">
+          <a href="/" id="top">
+            <img src="http://theepicureanexplorer.com/wp-content/uploads/2014/06/The-Hawaiian-Islands.jpg" />
+          </a>
+        </h1>
+            <a class="icon-menu" id="mobileMenu"></a>
+            
+            <!--MAIN NAVIGATION-->
+        <div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottom left">
+              
+          <nav class="main-nav">
+              <div class="nav-wrapper">
+                <ul class="cf">
+                    <li class="index-collection folder active-link active-folder">           
+                      <a href="/"><span>Home</span></a>            
+                    </li>
+                    <li class="page-collection">
+                      <a href="index.html"><span>Visualizations</span></a>
+                    </li>
+                    <li class="folders-collection folder">
+                      <div class="folder-parent">
+                        <a aria-haspopup="true"><span>Hawaiian Islands</span></a>
+                        <div class="folder-child-wrapper">
+                          <ul class="folder-child">
+                            <li class="">
+                              <a href="/kauai">
+                                <span>Kauai</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="/ohau">
+                                <span>Oahu</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="/maui">
+                                <span>Maui</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="/lanai-molokai">
+                                <span>Lanai & Molokai</span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="/bigisland">
+                                <span>Big Island Hawaii</span>
+                              </a>
+                            </li>
+                      </ul>
+                    </div>
+                  </div>
+            
+            </li>
+			<li class="page-collection">
+                <a href="Airbnb"><span>Airbnb</span></a>
+            </li>
+ 
+        
+      </ul>
+    </div>
+  </nav>
+
+            </div>
+          </div>
+  </header>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <div class="row">
+    <div class="col-md-12 col-lg-12 ">
+      <h3>Tourism DashBoard By Island-Monthly</h3> 
+        <div class="btn-group-lg">
+            <button type="button" onClick="window.location='/'">Statewide</button>
+            <button type="button" onClick="window.location='/tourismoahu'">Oahu</button>
+            <button type="button" onClick="window.location.href='/tourismkaui'">Kauai</button>
+            <button type="button" onClick="window.location.href='/tourismmaui'">Maui</button>
+            <button type="button" onClick="window.location.href='/tourismmolokai'">Molokai</button>
+            <button type="button" onClick="window.location.href='/tourismLanai'">Lanai</button>
+            <button type="button" onClick="window.location.href='/tourismHawiiIsland'">Hawii Island</button>
+            <button type="button" onClick="window.location.href='/tourisMap'">Map</button>     
+          </div>
+      
+
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <h3>Tourism statistics:</h3>
+          </div>
+        </div>
+<div class="container">
+   
+      
+      
+    </div>
+    <div class="row">
+      <div class="col-md-auto">
+        <h5>here visitors arrivals animated  plot will come</h5>
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>  
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>
