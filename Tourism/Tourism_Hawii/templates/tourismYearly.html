@@ -89,40 +89,42 @@
     <!-- first row -->
     <div class="row">
         <div class="col-md-12  jumbotron text-center">
-          <h2>Maui Island</h2>
+          <h2>Yearly-Tourism statistics</h2>
           <div class="col-md-12 ">
-            <h2>Select Date to View the Tourism statistics</h2>
+            <h4>Select Year</h24>
               <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
         </div>
     </div>
        <!-- second row of graphs -->
     <div class="row">
-       <div class="col-md-5">
+       <div class="col-md-6">
          <!--Market Compostion plot  -->
           <div id="pie"></div>
         </div>
-        <div class="col-md-5">
-          <!-- Length of stay -->
-          <div id="bubble"></div>
+        <div class="col-md-6">
+          
+          <div id="line"></div>
         </div>
       </div>
-    </div>
+    
     <div class="row">
-      <div class="col-md-5">
-          <!-- PPPD Expenditure per person chart -->
-          <div id="bar">
-      </div>
-      <div class="col-md-5">
-          <!-- crime chart -->
-          <div id="line"><div>
-      </div>
+      <div class="col-md-6">
+          
+          <div id="chart">
+      </div>  
     </div>
 
   </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script src="{{ url_for('static', filename='js/yearlyVisitors.js') }}"></script>
+<script src="{{ url_for('static', filename='js/crimeData.js') }}"></script>
+<script src="{{ url_for('static', filename='js/marketComposition.js') }}"></script>
+
+
+
 
 </body>
 
