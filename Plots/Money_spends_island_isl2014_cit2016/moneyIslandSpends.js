@@ -60,7 +60,7 @@ d3.csv("pricesIslands.csv", function(tvData) {
   var trace3={
     x: category,
     y: Kauai_exp,
-    name: "Kauiai",
+    name: "Kauai",
     type:"bar"
   };
   var trace4={
