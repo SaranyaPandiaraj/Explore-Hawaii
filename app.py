@@ -86,8 +86,10 @@ def security_deposit(neighborhood):
 
     security_deposit = pd.read_sql("SELECT lp.security_deposit, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id  WHERE security_deposit < 500",engine)
     security_deposit_group = security_deposit.loc[(security_deposit["neighbourhood_group_cleansed"] == neighborhood),:]
+    
+    security_deposit_group = security_deposit_group["security_deposit"].value_counts().to_dict()
 
-    return jsonify(security_deposit_group["security_deposit"].tolist())     
+    return jsonify(security_deposit_group)     
 
 @app.route("/amenities/<neighborhood>")
 def amenities(neighborhood):
@@ -159,7 +161,7 @@ def Cancellation(neighborhood):
    
     Cancellation_dictionary = Cancellation_group["cancellation_policy"].value_counts().to_dict()
     
-    return jsonify(Cancellation_dictionary)	
+    return jsonify(Cancellation_dictionary) 
 
 @app.route("/accom_bath_bedroom_beds/<neighborhood>")
 def accom_bath_bedroom_beds(neighborhood):
@@ -184,8 +186,8 @@ def host_listing(neighborhood):
     
     host_listing_grouped = host_listing_data.loc[(host_listing_data["neighbourhood_group_cleansed"] == neighborhood),:]
    
-    return jsonify(host_listing_grouped["host_listings_count"].tolist())	
-	
+    return jsonify(host_listing_grouped["host_listings_count"].tolist())    
+    
 @app.route("/host_visual/<neighborhood>")
 def host_visual(neighborhood):
   
@@ -204,19 +206,23 @@ def host_visual(neighborhood):
 
 @app.route("/reviews_rating/<neighborhood>")
 def reviews_rating(neighborhood):
-    reviews_rating_data = pd.read_sql("SELECT pr.review_scores_rating, pr.review_scores_cleanliness ,pr.review_scores_checkin,pr.review_scores_location pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Property_Reviews pr INNER JOIN Futuristic_Airbnb_Property_Address pa on pr.listing_id = pa.listing_id",engine)
+    reviews_rating_data = pd.read_sql("SELECT distinct pr.review_scores_rating,pa.listing_id ,pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Property_Reviews pr INNER JOIN Futuristic_Airbnb_Property_Address pa on pr.listing_id = pa.listing_id WHERE pr.review_scores_rating > 50",engine)
     
     reviews_rating_data_group = reviews_rating_data.loc[(reviews_rating_data["neighbourhood_group_cleansed"] == neighborhood),:]
    
-    review_scores_rating = reviews_rating_data_group["review_scores_rating"].value_counts().to_dict()
-    review_scores_cleanliness = reviews_rating_data_group["review_scores_cleanliness"].value_counts().to_list()
-    review_scores_checkin = reviews_rating_data_group["review_scores_checkin"].value_counts().to_list()
-    review_scores_location = reviews_rating_data_group["review_scores_location"].value_counts().to_list()
+    review_scores_rating = reviews_rating_data_group["review_scores_rating"].tolist()
     
-    reviews_rating_zip = [review_scores_rating,review_scores_cleanliness,review_scores_checkin,review_scores_location]
+    return jsonify(review_scores_rating)    
+
+@app.route("/reviews_comments/<neighborhood>")
+def reviews_comments(neighborhood):
+    reviews_comments_data = pd.read_sql("SELECT distinct pr.comments,pa.listing_id ,pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Property_Reviews pr INNER JOIN Futuristic_Airbnb_Property_Address pa on pr.listing_id = pa.listing_id WHERE pr.review_scores_rating > 50",engine)
     
-    return jsonify(reviews_rating_zip)   	
+    reviews_comments_data_group = reviews_comments_data.loc[(reviews_comments_data["neighbourhood_group_cleansed"] == neighborhood),:]
+   
+    review_comments = reviews_comments_data_group["comments"].tolist()
     
+    return jsonify(review_comments)    
     
 if __name__ == "__main__":
     app.run()

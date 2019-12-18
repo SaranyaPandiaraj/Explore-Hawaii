@@ -34,17 +34,26 @@ function Listing_Price(neighborhood) {
 function Security_Deposit(neighborhood) {
   var price_url = `/security_deposit/${neighborhood}`;
   d3.json(price_url).then(function(data) {
-    var security_deposit = data;
+	console.log(data);
+    var Deposit_keys = [];
+    var Deposit_values = [];
+    
+    for (var k in data) {
+      Deposit_keys.push(k);
+      Deposit_values.push(data[k])};
+   
     var trace3 = {
-      x: security_deposit,
-	  y: [0,100,200,500,500,500],
-      type: "bar",
+      x: Deposit_keys,
+	  y: Deposit_values,
+      type: "scatter",
+	  mode: 'lines+markers',
       marker: {
 				cmax: 50, 
 				cmin: 0, 
 				colorbar: {}, 
 				color: color_code ,
-				colorscale: 'Jet' 
+				colorscale: 'Jet',
+				size : 12
 			  }
     };
     
@@ -413,10 +422,11 @@ function host_listing(neighborhood) {
 function reviews_rating(neighborhood) {
   
   var reviews_rating_url = `/reviews_rating/${neighborhood}`;
-
-  d3.json(reviews_rating_url).then(function(response) {
+ 
+  d3.json(reviews_rating_url).then(function(reviews_data) {
     
-    var review_scores_rating = response;
+	console.log(reviews_data);
+    var review_scores_rating = reviews_data;
    
     var data = [
       {
@@ -430,7 +440,11 @@ function reviews_rating(neighborhood) {
         name: "",
        
         marker:{
-          color: chart_color
+                cmax: 50, 
+				cmin: 0, 
+				colorbar: {}, 
+				color: color_code ,
+				colorscale: 'Jet' 
         },
       
         type: 'box'
@@ -442,7 +456,7 @@ function reviews_rating(neighborhood) {
       xaxis: {title: "Overall Rating (Scale of 0 to 100)"}
     }
     //  Create the box plot
-    Plotly.newPlot('box', data, layout);
+    Plotly.newPlot('Reviews', data, layout);
   });
 }
 
@@ -468,6 +482,7 @@ function init() {
 	 Cancellation(Initial_Neighborhood_Value);
 	 accom_bath_bedroom_beds(Initial_Neighborhood_Value);
 	 host_listing(Initial_Neighborhood_Value);
+	 reviews_rating(Initial_Neighborhood_Value);
   });
 }
 
@@ -481,5 +496,6 @@ function optionChanged(OnClick_Value) {
 	 Cancellation(OnClick_Value);
 	 accom_bath_bedroom_beds(OnClick_Value);
 	 host_listing(OnClick_Value);
+	 reviews_rating(OnClick_Value);
 }	 
 init();
