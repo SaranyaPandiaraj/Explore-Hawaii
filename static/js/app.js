@@ -140,20 +140,24 @@ function Property_Type(neighborhood) {
       values: property_type_values,
       labels: property_type_keys,
       type: "pie",
-      marker: {
-        cmax: 50, 
+      /*marker: {
+        cmax: 10, 
 		cmin: 0,  
         colorbar: {}, 
 		colors: color_code ,
 		colorscale: 'Jet' 
-      }
+      },*/
+	  colorway: {
+        valType: 'Jet',
+        role: 'style',
+        editType: 'calc'}
     }];
     var layout2 = {
       title: "Property Types",
 	  paper_bgcolor:'rgba(0,0,0,0)',
       plot_bgcolor:'rgba(0,0,0,0)',
 	   width: 500,
-  height: 500
+		height: 500
     };
     // Create pie chart
     Plotly.newPlot('property', trace3, layout2);
@@ -179,11 +183,11 @@ function Room_Type(neighborhood) {
           labels: room_type_keys,
           type: "pie",
           marker: {
-           cmax: 50, 
-		cmin: 0,  
-        colorbar: {}, 
-		colors: color_code ,
-		colorscale: 'Jet' 
+				   cmax: 50, 
+				cmin: 0,  
+				colorbar: {}, 
+				colors: color_code ,
+				colorscale: 'Jet' 
           }
         }];
         
@@ -443,23 +447,228 @@ function reviews_rating(neighborhood) {
                 cmax: 50, 
 				cmin: 0, 
 				colorbar: {}, 
-				color: color_code ,
+				colors:  color_code,
 				colorscale: 'Jet' 
         },
-      
-        type: 'box'
+        type: 'box',
+		colorway: {
+        valType: 'Jet',
+        role: 'style',
+        editType: 'calc'}
       }
     ];
     // Add title and x label
     layout = {
       title: "Distribution of Ratings",
-      xaxis: {title: "Overall Rating (Scale of 0 to 100)"}
+      xaxis: {title: "Overall Rating (Scale of 0 to 100)"},
+	  paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)'
     }
     //  Create the box plot
     Plotly.newPlot('Reviews', data, layout);
   });
 }
 
+function host_visual_pie(neighborhood) {
+  
+  var host_visual_pie_Url = `/host_visual/${neighborhood}`;
+
+  d3.json(host_visual_pie_Url).then(function(host_visual) {
+ 
+
+    var host_is_superhost_keys = [];
+    var host_is_superhost_values = [];
+    
+    for (var k in host_visual[0]) {
+      host_is_superhost_keys.push(k);
+      host_is_superhost_values.push(host_visual[0][k])};
+	  
+
+	var host_identity_verified_keys = [];
+    var host_identity_verified_values = [];
+    
+    for (var k in host_visual[1]) {
+      host_identity_verified_keys.push(k);
+      host_identity_verified_values.push(host_visual[1][k])}; 
+ 
+ 
+    var trace13 = {
+      values: host_is_superhost_values,
+      labels: ["Host is Not Superhost","Host Is Superhost"],
+      type: "pie",
+	  name: "Host is SuperHost",
+	  hole: .3,
+	  domain: {column: 0},
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+       // colorbar: {}, 
+		color: "blue" ,
+		colorscale: 'Jet' 
+      }
+    };
+	
+	var trace14 = {
+      values: host_identity_verified_values,
+      labels: ["Host Identity Not Verified","Host Identity Verified"],
+      type: "pie",
+	  name: "Host Identity Verified",
+	  hole: .3,
+	  domain: {column: 1},
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+       // colorbar: {}, 
+		color: "red" ,
+		colorscale: 'Jet' 
+      }
+    };
+	
+	var data = [trace13,trace14];
+    var layout12 = {
+      title: "Host Is Superhost & Host Identity Verified",
+	  paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)',
+	  //showlegend: false,
+	  grid: {rows: 1, columns: 2 },
+	   width: 1300,
+		height: 500
+    };
+    // Create pie chart
+    Plotly.newPlot('host_visual_pie', data, layout12);
+  });
+}
+function host_visual(neighborhood) {
+  
+  var host_visual_Url = `/host_visual/${neighborhood}`;
+
+  d3.json(host_visual_Url).then(function(host_visual) {
+ 
+
+
+	  
+	var host_response_time_keys = [];
+    var host_response_time_values = [];
+    
+    for (var k in host_visual[2]) {
+      host_response_time_keys.push(k);
+      host_response_time_values.push(host_visual[2][k])};
+	 
+
+	var host_response_rate_keys = [];
+    var host_response_rate_values = [];
+    
+    for (var k in host_visual[3]) {
+      host_response_rate_keys.push(k);
+      host_response_rate_values.push(host_visual[3][k])};  
+ 
+
+	
+	var trace15 = {
+      y: host_response_time_values,
+      x: host_response_time_keys,
+      type: "bar",
+	  name: "Host Response Time",
+
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+        //colorbar: {}, 
+		color: "green" ,
+		colorscale: 'Jet' 
+      }
+    };
+	var trace16 = {
+      y: host_response_rate_values,
+      x: host_response_rate_keys,
+      type: "scatter",
+	  mode: 'lines+markers',
+	  name: "Host Response Rate",
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+        size : 12, 
+		color: "orange" ,
+		colorscale: 'Jet' 
+      }, xaxis: 'x2',
+		yaxis: 'y2',
+    };
+	
+	var data = [trace15,trace16];
+    var layout13 = {
+      title: "Host Response Rate & Time",
+	  paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)',
+	  grid: {rows: 1, columns: 2},
+	   width: 1300,
+		height: 500
+    };
+    // Create pie chart
+    Plotly.newPlot('host_visual', data, layout13);
+  });
+}
+
+function reviews_comments(neighborhood) {
+  
+  var reviews_comments_url = `/reviews_comments/${neighborhood}`;
+ 
+  d3.json(reviews_comments_url).then(function(reviews_data) {
+	  var wordcloudstring = "";
+    
+    wordcloudstring = reviews_data.join(" ");
+    var myConfig = {
+   
+      type: 'wordcloud',
+      options: {
+        
+        text: wordcloudstring,
+        
+        minLength: 5,
+        // Ignore irrelevant words
+        ignore: ["Hawaii","there","would","which","really","host","place","house","could","didn't","definitely","accommodating","about","first","needed","bathroom","bedroom","There","around","great","apartment","kitchen","condo","house","everything","Place","Great","great","during","helpful","downtown","questions","location","located","space","within","visit","their","little","Waikki","Waikiki","Hill","neighborhood","Thanks","Thank","thanks","thank","clean","right","left","recommend","before","after","wonderful","again","hosts","amazing","beautiful","again","airport","arrived","check","other","super","stayed","Needle","excellent","The","arrival","Would","things","perfect","loved","described","exactly","Space","available","Everything","awesome","fantastic","welcome","enough","responsive","absolutely","experience","highly","minute","anyone","studio","extremely","because","while","staying","Carol","Airbnb","better","being","The","every","comfortable","close","though","where","wanted","early","itself","communication","looking","instructions","distance","information","airbnb","short","light","night","lovely","enjoyed"],
+        
+        maxItems: 50,
+      
+        aspect: 'flow-center',
+       
+        rotate: true,
+       
+        colorType: 'palette',
+        
+        palette: color_code,
+        
+        style: {
+          fontFamily: 'Crete Round',
+       
+          hoverState: {
+            backgroundColor: color_code,
+            borderRadius: 2,
+            fontColor: 'white'
+          },
+         
+          tooltip: {
+            text: '%text: %hits',
+            visible: true,
+            alpha: 0.9,
+            backgroundColor: "black",
+            borderRadius: 2,
+            borderColor: 'none',
+            fontColor: 'white',
+            fontFamily: 'Georgia',
+            textAlpha: 1
+          }
+        }
+      },
+    };
+ 
+    zingchart.render({ 
+   
+      id: 'comment', 
+      data: myConfig,
+      width: '100%' 
+    });
+  });
+}
 function init() {
   
   var selector = d3.select("#DropDown_Neighborhood");
@@ -483,6 +692,9 @@ function init() {
 	 accom_bath_bedroom_beds(Initial_Neighborhood_Value);
 	 host_listing(Initial_Neighborhood_Value);
 	 reviews_rating(Initial_Neighborhood_Value);
+	 host_visual_pie(Initial_Neighborhood_Value);
+	 host_visual(Initial_Neighborhood_Value);
+	 reviews_comments(Initial_Neighborhood_Value);
   });
 }
 
@@ -497,5 +709,8 @@ function optionChanged(OnClick_Value) {
 	 accom_bath_bedroom_beds(OnClick_Value);
 	 host_listing(OnClick_Value);
 	 reviews_rating(OnClick_Value);
+	 host_visual_pie(OnClick_Value);
+	 host_visual(OnClick_Value);
+	 reviews_comments(OnClick_Value);
 }	 
 init();
