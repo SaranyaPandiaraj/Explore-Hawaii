@@ -16,7 +16,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
   <script src="/static/js/hawaii.js"></script>
- 
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 <script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-693dea59fd2588b3874e0-min.en-US.js" ></script>
 <script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script>
 
@@ -200,12 +201,26 @@
         </div>		
       </div>
 	  
+
 <h2>Host Visualizations</h2>	  
 <div class = "col-md-12 col-lg-12">
           <div id="host_listing"></div>
-</div>		  
-
-        		
+</div>	
+<div class = "col-md-12 col-lg-12">
+          <div id="host_visual_pie"></div>
+</div>
+<div class = "col-md-12 col-lg-12">
+          <div id="host_visual"></div>
+</div>
+	  
+<h2>Reviews Visualizations</h2>	  
+<div class = "col-md-12 col-lg-12">
+          <div id="Reviews"></div>
+</div>
+<div class = "col-md-12 col-lg-12">
+          <div id="comment"></div>
+</div>			  
+	
       </div>
 	</div>
 	
@@ -213,6 +228,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+ <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+  ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 
 </body>
 
