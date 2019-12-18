@@ -144,27 +144,79 @@ def bed_type(neighborhood):
     
     bed = pd.read_sql("SELECT lp.bed_type, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id",engine)
     
-    accom_bed_bath_bed_group = bed.loc[(bed["neighbourhood_group_cleansed"] == neighborhood),:]
+    bed_group = bed.loc[(bed["neighbourhood_group_cleansed"] == neighborhood),:]
    
-    bed_type_dictionary = accom_bed_bath_bed_group["bed_type"].value_counts().to_dict()
+    bed_type_dictionary = bed_group["bed_type"].value_counts().to_dict()
     
-    return jsonify(bed_type_dictionary)  
+    return jsonify(bed_type_dictionary)
 
-@app.route("/accom_bed_bath_bed/<neighborhood>")
-def accom_bed_bath_bed(neighborhood):
+@app.route("/Cancellation/<neighborhood>")
+def Cancellation(neighborhood):
     
-    accom_bed_bath_bed = pd.read_sql("SELECT lp.accommodates,lp.bathrooms,lp.bedrooms,lp.beds, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id",engine)
+    Cancellation = pd.read_sql("SELECT lp.cancellation_policy, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id",engine)
     
-    accom_bed_bath_bed_group = accom_bed_bath_bed.loc[(accom_bed_bath_bed["neighbourhood_group_cleansed"] == neighborhood),:]
+    Cancellation_group = Cancellation.loc[(Cancellation["neighbourhood_group_cleansed"] == neighborhood),:]
    
-    accommodates = accom_bed_bath_bed_group["accommodates"].value_counts().to_dict()
-    bathrooms = accom_bed_bath_bed_group["bathrooms"].value_counts().to_dict()
-    bedrooms = accom_bed_bath_bed_group["bedrooms"].value_counts().to_dict()
-    beds = accom_bed_bath_bed_group["beds"].value_counts().to_dict()
+    Cancellation_dictionary = Cancellation_group["cancellation_policy"].value_counts().to_dict()
     
-    accom_bed_bath_bed_zip = [accommodates,bathrooms,bedrooms,beds]
+    return jsonify(Cancellation_dictionary)	
+
+@app.route("/accom_bath_bedroom_beds/<neighborhood>")
+def accom_bath_bedroom_beds(neighborhood):
     
-    return jsonify(accom_bed_bath_bed_zip)      
+    accom_bath_bedroom_beds = pd.read_sql("SELECT lp.accommodates,lp.bathrooms,lp.bedrooms,lp.beds, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id",engine)
+    
+    accom_bath_bedroom_beds_group = accom_bath_bedroom_beds.loc[(accom_bath_bedroom_beds["neighbourhood_group_cleansed"] == neighborhood),:]
+   
+    accommodates = accom_bath_bedroom_beds_group["accommodates"].value_counts().to_dict()
+    bathrooms = accom_bath_bedroom_beds_group["bathrooms"].value_counts().to_dict()
+    bedrooms = accom_bath_bedroom_beds_group["bedrooms"].value_counts().to_dict()
+    beds = accom_bath_bedroom_beds_group["beds"].value_counts().to_dict()
+    
+    accom_bath_bedroom_beds_zip = [accommodates,bathrooms,bedrooms,beds]
+    
+    return jsonify(accom_bath_bedroom_beds_zip)   
+
+@app.route("/host_listing/<neighborhood>")
+def host_listing(neighborhood):
+  
+    host_listing_data = pd.read_sql("SELECT ah.host_listings_count, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Hosts ah INNER JOIN Futuristic_Airbnb_Listings_Property lp ON ah.host_id = lp.host_id INNER JOIN Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id WHERE ah.host_listings_count<34",engine)
+    
+    host_listing_grouped = host_listing_data.loc[(host_listing_data["neighbourhood_group_cleansed"] == neighborhood),:]
+   
+    return jsonify(host_listing_grouped["host_listings_count"].tolist())	
+	
+@app.route("/host_visual/<neighborhood>")
+def host_visual(neighborhood):
+  
+    host_visual_data = pd.read_sql("SELECT ah.host_is_superhost , ah.host_identity_verified, ah.host_response_time ,ah.host_response_rate, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Hosts ah INNER JOIN Futuristic_Airbnb_Listings_Property lp ON ah.host_id = lp.host_id INNER JOIN Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id WHERE ah.host_listings_count<34",engine)
+    
+    host_visual_grouped = host_visual_data.loc[(host_visual_data["neighbourhood_group_cleansed"] == neighborhood),:]
+   
+    host_is_superhost = host_visual_grouped["host_is_superhost"].value_counts().to_dict()
+    host_identity_verified = host_visual_grouped["host_identity_verified"].value_counts().to_dict()
+    host_response_time = host_visual_grouped["host_response_time"].value_counts().to_dict()
+    host_response_rate = host_visual_grouped["host_response_rate"].value_counts().to_dict()
+    
+    host_visual_zip = [host_is_superhost,host_identity_verified,host_response_time,host_response_rate]
+    
+    return jsonify(host_visual_zip) 
+
+@app.route("/reviews_rating/<neighborhood>")
+def reviews_rating(neighborhood):
+    reviews_rating_data = pd.read_sql("SELECT pr.review_scores_rating, pr.review_scores_cleanliness ,pr.review_scores_checkin,pr.review_scores_location pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Property_Reviews pr INNER JOIN Futuristic_Airbnb_Property_Address pa on pr.listing_id = pa.listing_id",engine)
+    
+    reviews_rating_data_group = reviews_rating_data.loc[(reviews_rating_data["neighbourhood_group_cleansed"] == neighborhood),:]
+   
+    review_scores_rating = reviews_rating_data_group["review_scores_rating"].value_counts().to_dict()
+    review_scores_cleanliness = reviews_rating_data_group["review_scores_cleanliness"].value_counts().to_list()
+    review_scores_checkin = reviews_rating_data_group["review_scores_checkin"].value_counts().to_list()
+    review_scores_location = reviews_rating_data_group["review_scores_location"].value_counts().to_list()
+    
+    reviews_rating_zip = [review_scores_rating,review_scores_cleanliness,review_scores_checkin,review_scores_location]
+    
+    return jsonify(reviews_rating_zip)   	
+    
     
 if __name__ == "__main__":
     app.run()
