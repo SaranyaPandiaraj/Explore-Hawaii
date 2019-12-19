@@ -47,7 +47,7 @@
                               </a>
                             </li>
                             <li class="">
-                              <a href="Ohau">
+                              <a href="Oahu">
                                 <span>Oahu</span>
                               </a>
                             </li>
@@ -71,7 +71,10 @@
                   </div>
             </li>
             <li class="page-collection">
-              <a href="/Airbnb"><span>Airbnb</span></a> 
+              <a href="Airbnb"><span>Airbnb</span></a> 
+            </li>
+			<li class="page-collection">
+                <a href="Airbnb_Map"><span>Airbnb Map</span></a>
             </li>
       </ul>
     </div>
@@ -117,27 +120,27 @@
                     <div class="folder-child-wrapper">
                       <ul class="folder-child">
                             <li class="">
-                              <a href="/kauai">
+                              <a href="Kauai">
                                 <span>Kauai</span>
                               </a>
                             </li>
                             <li class="">
-                              <a href="/ohau">
+                              <a href="Oahu">
                                 <span>Oahu</span>
                               </a>
                             </li>
                             <li class="">
-                              <a href="/maui">
+                              <a href="Maui">
                                 <span>Maui</span>
                               </a>
                             </li>
                             <li class="">
-                              <a href="/lanai-molokai">
+                              <a href="lanai">
                                 <span>Lanai & Molokai</span>
                               </a>
                             </li>
                             <li class="">
-                              <a href="/bigisland">
+                              <a href="bigisland">
                                 <span>Big Island Hawaii</span>
                               </a>
                             </li>
@@ -149,6 +152,9 @@
 			<li class="page-collection">
                 <a href="Airbnb"><span>Airbnb</span></a>
             </li>
+			<li class="page-collection">
+                <a href="Airbnb_Map"><span>Airbnb Map</span></a>
+            </li>
  
         
       </ul>
@@ -159,7 +165,8 @@
           </div>
 </header>
 <br/><br/><br/><br/><br/><br/><br/><br/>
-    <div class="row">
+
+    <div class="Airbnb_Row">
       <div class="col-md-12 col-lg-12 jumbotron text-center">
         <h2>Hawaii Airbnbs</h2>
       <div class="col-md-12 col-lg-12">
@@ -167,29 +174,41 @@
           <select id="DropDown_Neighborhood" onchange="optionChanged(this.value)"></select>
       </div>
       </div>
+	  <center>
+	  <a class="button" href="#list"><span>Listing Details </span></a>
+	  <a class="button" href="#host"><span>Host Details </span></a>
+	  <a class="button" href="#review"><span>Review Details </span></a>
+	  </center>
     </div>
+	
+	<br>
 
-<h2>Listing Visualizations</h2>
+
     <div class="well">
+	<h2 id="list">Listing Visualizations</h2>
       <div class = "row">
-        <div class = "col-md-12 col-lg-12">
-          <div id="price"></div>
-		  <div id="security"></div>
-		  <div id="amenities"></div>
-		  
-        </div>  
-      </div>
-	  <div class = "row">
         <div class = "col-md-6 col-lg-6">
+          <div id="price"></div>
+		 </div>
+		 <div class = "col-md-6 col-lg-6">
+		  <div id="security"></div>
+		  </div>
+		  <div class = "col-md-12 col-lg-12">
+		  <div id="amenities"></div>
+		  </div>
+        </div>  
+      
+	  <div class = "row">
+        <div class = "col-md-3 col-lg-3">
           <div id="property"></div>
         </div>
-        <div class = "col-md-6 col-lg-6">
+        <div class = "col-md-3 col-lg-3">
           <div id="room"></div>
         </div>
-		<div class = "col-md-6 col-lg-6">
+		<div class = "col-md-3 col-lg-3">
           <div id="bed"></div>
-		 </div>	  
-		<div class = "col-md-6 col-lg-6">
+		 </div>	
+		<div class = "col-md-3 col-lg-3">
           <div id="cancellation"></div>
         </div>
        
@@ -200,9 +219,10 @@
           <div id="accom_bath_bedroom_beds"></div>
         </div>		
       </div>
-	  
+	  </div>
 
-<h2>Host Visualizations</h2>	  
+<h2 id="host">Host Visualizations</h2>	
+ <div class = "row"> 
 <div class = "col-md-12 col-lg-12">
           <div id="host_listing"></div>
 </div>	
@@ -212,15 +232,32 @@
 <div class = "col-md-12 col-lg-12">
           <div id="host_visual"></div>
 </div>
+
+</div>	  
+<h2 id="review">Reviews Visualizations</h2>	  
+
+ <center>
+	  <button type="button" class="button" onclick="Reviews('Honolulu')"><span>Honolulu</span></button>
+	  <button type="button" class="button" onclick="Reviews('Hawaii')"><span>Hawaii</span></button>
+	  <button type="button" class="button" onclick="Reviews('Kauai')"><span>Kauai</span></button>
+	  <button type="button" class="button" onclick="Reviews('Maui')"><span>Maui</span></button>
+</center>
+<div class ="row">	  
+
 	  
 <h2>Reviews Visualizations</h2>	  
+
 <div class = "col-md-12 col-lg-12">
           <div id="Reviews"></div>
 </div>
 <div class = "col-md-12 col-lg-12">
           <div id="comment"></div>
 </div>			  
-	
+
+
+</div>
+</div>	
+
       </div>
 	</div>
 	
@@ -232,6 +269,15 @@
   <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
   ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 
-</body>
-
+   <!--FOOTER WITH OPEN BLOCK FIELD-->
+        <footer id="footer">
+          <div class="back-to-top-link"><a href="#top"><span class="arrow"></span>Top</a></div>
+          <div class="footer-wrapper">
+           
+          
+          </div>
+        </footer>
+		<script data-name="static-context" src="/static/js/hawaii.js"></script>
+ <script src="https://static1.squarespace.com/static/ta/515c7b5ae4b0875140c3d94a/2778/scripts/site-bundle.js" type="text/javascript"></script>
+  </body>
 </html>

@@ -10,6 +10,7 @@ from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
+from flask import send_file
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -18,7 +19,9 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/Futuristic_Airbnb_latest.sqlite"
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/Futuristic_Airbnb.sqlite"
+
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -27,7 +30,9 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Define the engine
-engine = create_engine("sqlite:///database/Futuristic_Airbnb_latest.sqlite", encoding='utf8')
+
+engine = create_engine("sqlite:///database/Futuristic_Airbnb.sqlite", encoding='utf8')
+
 conn = engine.connect()
 session = Session(engine)
 
@@ -64,6 +69,10 @@ def more():
 @app.route("/Airbnb")   
 def Airbnb():   
     return render_template("Airbnb.html")
+	
+@app.route("/Airbnb_Map")   
+def Airbnb_Map():   
+    return render_template("Airbnb_Map.html")
 
 @app.route("/neighborhoods")
 def neighborhoods():
