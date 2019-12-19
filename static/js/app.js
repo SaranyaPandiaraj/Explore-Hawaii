@@ -141,7 +141,6 @@ function Property_Type(neighborhood) {
       values: property_type_values,
       labels: property_type_keys,
       type: "pie",
-
       marker: {
         cmax: 10, 
 		cmin: 0,  
@@ -149,16 +148,13 @@ function Property_Type(neighborhood) {
 		colors: Pie_Col ,
 		colorscale: Col_Scale 
       }
-
     }];
     var layout2 = {
       title: "Property Types",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-
       plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
 	   width: 400,
 		height: 400
-
     };
     // Create pie chart
     Plotly.newPlot('property', trace3, layout2);
@@ -187,10 +183,8 @@ function Room_Type(neighborhood) {
 				   cmax: 50, 
 				cmin: 0,  
 				colorbar: {}, 
-
 				colors: Pie_Col ,
 				colorscale: Col_Scale 
-
           }
         }];
         
@@ -450,16 +444,10 @@ function reviews_rating(neighborhood) {
                 cmax: 50, 
 				cmin: 0, 
 				colorbar: {}, 
-				colors:  color_code,
-
+				colors:  Pie_Col,
 				colorscale: Col_Scale 
         },
-        type: 'box',
-		colorway: {
-        valType: Col_Scale,
-
-        role: 'style',
-        editType: 'calc'}
+        type: 'box'
       }
     ];
     // Add title and x label
@@ -467,9 +455,7 @@ function reviews_rating(neighborhood) {
       title: "Distribution of Ratings",
       xaxis: {title: "Overall Rating (Scale of 0 to 100)"},
 	  paper_bgcolor:'rgba(0,0,0,0)',
-
       plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
-
     }
     //  Create the box plot
     Plotly.newPlot('Reviews', data, layout);
@@ -510,10 +496,8 @@ function host_visual_pie(neighborhood) {
         cmax: 10, 
 		cmin: 0,  
        // colorbar: {}, 
-
 		colors: Pie_Col ,
 		colorscale: Col_Scale 
-
       }
     };
 	
@@ -528,10 +512,8 @@ function host_visual_pie(neighborhood) {
         cmax: 10, 
 		cmin: 0,  
        // colorbar: {}, 
-
 		colors: Pie_Col ,
 		colorscale: Col_Scale 
-
       }
     };
 	
@@ -539,12 +521,10 @@ function host_visual_pie(neighborhood) {
     var layout12 = {
       title: "Host Is Superhost & Host Identity Verified",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-
       plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
 	  //showlegend: false,
 	  grid: {rows: 1, columns: 2,  pattern: 'independent' },
 	   width: 1400,
-
 		height: 500
     };
     // Create pie chart
@@ -587,10 +567,8 @@ function host_visual(neighborhood) {
         cmax: 10, 
 		cmin: 0,  
         //colorbar: {}, 
-
 		color: color_code ,
 		colorscale: Col_Scale 
-
       }
     };
 	var trace16 = {
@@ -603,10 +581,8 @@ function host_visual(neighborhood) {
         cmax: 10, 
 		cmin: 0,  
         size : 12, 
-
 		color: color_code ,
 		colorscale: Col_Scale 
-
       }, xaxis: 'x2',
 		yaxis: 'y2',
     };
@@ -615,11 +591,9 @@ function host_visual(neighborhood) {
     var layout13 = {
       title: "Host Response Rate & Time",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-
       plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
 	  grid: {rows: 1, columns: 2, pattern: 'independent'},
 	   width: 1400,
-
 		height: 500
     };
     // Create pie chart
@@ -654,19 +628,15 @@ function reviews_comments(neighborhood) {
        
         colorType: 'palette',
         
-
         palette: Pie_Col,
-
         
         style: {
           fontFamily: 'Crete Round',
        
           hoverState: {
-
 	
             backgroundColor: Col_Scale,
             borderRadius: 3,
-
             fontColor: 'white'
           },
          
@@ -675,9 +645,7 @@ function reviews_comments(neighborhood) {
             visible: true,
             alpha: 0.9,
             backgroundColor: "black",
-
             borderRadius: 3,
-
             borderColor: 'none',
             fontColor: 'white',
             fontFamily: 'Georgia',
@@ -695,6 +663,7 @@ function reviews_comments(neighborhood) {
     });
   });
 }
+
 
 function init() {
   
@@ -718,12 +687,10 @@ function init() {
 	 Cancellation(Initial_Neighborhood_Value);
 	 accom_bath_bedroom_beds(Initial_Neighborhood_Value);
 	 host_listing(Initial_Neighborhood_Value);
-
 	 host_visual_pie(Initial_Neighborhood_Value);
 	 host_visual(Initial_Neighborhood_Value);
 	 neighborhood=Initial_Neighborhood_Value;
      set_color();
-
   });
 }
 
@@ -736,7 +703,6 @@ function optionChanged(OnClick_Value) {
 	 Bed_Type(OnClick_Value);
 	 Cancellation(OnClick_Value);
 	 accom_bath_bedroom_beds(OnClick_Value);
-
 	 host_listing(OnClick_Value); 
 	 host_visual_pie(OnClick_Value);
 	 host_visual(OnClick_Value);
@@ -774,5 +740,4 @@ function set_color() {
   }
 }
 	 
-
 init();
