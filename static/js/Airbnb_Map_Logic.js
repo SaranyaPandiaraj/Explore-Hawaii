@@ -1,7 +1,7 @@
 d3.json("/static/geojson/Airbnb.geojson", function(json_data) {
 	 
 var airbnb_data = json_data.features;
-console.log(airbnb_data);
+
 var Features_Info = L.geoJSON(airbnb_data,{
 					onEachFeature: function(Data,layer){
 						layer.bindPopup(`<h2> <center>${Data.properties.name} </center></h2>\
@@ -14,7 +14,7 @@ var Features_Info = L.geoJSON(airbnb_data,{
 					},
 					pointToLayer:function(Data,latlng){
 						return new L.circle(latlng,{
-							radius: Data.properties.calculated_host_listings_count * 1,
+							radius: Data.properties.calculated_host_listings_count * 10,
 							fillColor: Colour(Data.properties.calculated_host_listings_count),
 							fillOpacity:.7,
 							stroke:false,
@@ -48,25 +48,31 @@ var baseMaps = {
 	"Light Map": lightmap
 };
 
-var TectonicPlates = new L.LayerGroup();
+var Rest_Cafe = new L.LayerGroup();
 
 var overlayMaps ={
 	"Airbnb Listings": Features_Info,
-	"tectonic Plates": TectonicPlates
+	"Popular Rest/Cafe": Rest_Cafe
 };
 
 var map = L.map("map", {
 	center: [21.1933, -156.0239],
-	zoom: 7.0,
-	layers: [outdoors, Features_Info, TectonicPlates]
+	zoom: 7.5,
+	layers: [outdoors, Features_Info, Rest_Cafe]
 }); 
 
-d3.json("https://raw.githubusercontent.com/fraxen/TectonicPlates/master/GeoJSON/PB2002_boundaries.json", function(TectonicPlatesData) {
-	L.geoJSON(TectonicPlatesData,{
+d3.json("/static/geojson/Rest_Cafe.geojson", function(Rest_Cafe_Data) {
+	L.geoJSON(Rest_Cafe_Data,{onEachFeature: function(Data,layer){
+						layer.bindPopup(`<h2> <center>${Data.properties.name} </center></h2>\
+						<hr><h3>Rating : ${Data.properties.rating}</h3>\
+						<h3>Place : ${Data.properties.city}</h3>\
+						<h3>Category : ${Data.properties.category}</h3>\
+						<h3>Address : ${Data.properties.address}</h3>`);
+					},
 		color:"orange",
-		weight:3
+		weight:1.5
 	})
-	.addTo(TectonicPlates);
+	.addTo(Rest_Cafe);
 });
 
 L.control.layers(baseMaps, overlayMaps, {
