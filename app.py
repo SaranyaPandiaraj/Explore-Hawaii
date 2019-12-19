@@ -19,9 +19,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # Database Setup
 #################################################
 
-
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/Futuristic_Airbnb.sqlite"
-
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -30,9 +28,7 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Define the engine
-
 engine = create_engine("sqlite:///database/Futuristic_Airbnb.sqlite", encoding='utf8')
-
 conn = engine.connect()
 session = Session(engine)
 
