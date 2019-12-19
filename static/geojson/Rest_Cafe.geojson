@@ -1,0 +1,3008 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.85986,21.3115 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Ali'i Coffee",
+    "rating":5,
+    "address":"35 S Beretania St",
+    "zipcode":96813,
+    "category":"Coffee & Tea Coffee Roasteries Sandwiches",
+    "Maui_distance":177.73051476112965,
+    "Maui_Island_dist":177.73051476112965,
+    "Maui_island_dist":177.73051476112965,
+    "oahu_island_dist":20.371553900322585,
+    "Lanai_island_dist":115.23974096090858,
+    "Big_island_dist":303.3934887303468
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.855165,21.296221 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Fifth Wave Coffee",
+    "rating":5,
+    "address":"333 Ward Ave",
+    "zipcode":96814,
+    "category":"Coffee & Tea",
+    "Maui_distance":176.7747263141506,
+    "Maui_Island_dist":176.7747263141506,
+    "Maui_island_dist":176.7747263141506,
+    "oahu_island_dist":21.80115280680503,
+    "Lanai_island_dist":114.09955860281877,
+    "Big_island_dist":302.0454089874871
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4385355,20.75082854 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Kaimana Coffee",
+    "rating":5,
+    "address":"1323 N Holopono St",
+    "zipcode":96753,
+    "category":"Coffee & Tea Food Trucks Bagels",
+    "Maui_distance":12.797712140473493,
+    "Maui_Island_dist":12.797712140473493,
+    "Maui_island_dist":12.797712140473493,
+    "oahu_island_dist":187.30121119760517,
+    "Lanai_island_dist":54.51165016815313,
+    "Big_island_dist":149.73560440871842
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.45089769999998,20.72993459 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Your Bliss Cafe",
+    "rating":5,
+    "address":"1993 S Kihei Rd",
+    "zipcode":96753,
+    "category":"Coffee & Tea Cafes Shaved Ice",
+    "Maui_distance":14.944642855472027,
+    "Maui_Island_dist":14.944642855472027,
+    "Maui_island_dist":14.944642855472027,
+    "oahu_island_dist":186.85215967812024,
+    "Lanai_island_dist":53.508324377838704,
+    "Big_island_dist":148.8079641889622
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.44037,20.6872 ]
+    },
+    "properties": {
+    "city":"Wailea",
+    "name":"Teapresso Bar - Wailea",
+    "rating":5,
+    "address":"3750 Wailea Alanui Dr",
+    "zipcode":96753,
+    "category":"Coffee & Tea Bubble Tea Juice Bars & Smoothies",
+    "Maui_distance":16.532990863156677,
+    "Maui_Island_dist":16.532990863156677,
+    "Maui_island_dist":16.532990863156677,
+    "oahu_island_dist":189.66467849009038,
+    "Lanai_island_dist":55.61860883753192,
+    "Big_island_dist":144.61094622965922
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.680134,20.876049 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Vigilatte Artisan Coffee",
+    "rating":5,
+    "address":"844 Front St",
+    "zipcode":96761,
+    "category":"Coffee & Tea Bakeries",
+    "Maui_distance":39.496524600866714,
+    "Maui_Island_dist":39.496524600866714,
+    "Maui_island_dist":39.496524600866714,
+    "oahu_island_dist":157.62820934838936,
+    "Lanai_island_dist":27.547216012653248,
+    "Big_island_dist":176.25988087633516
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.68766100000002,20.950338000000002 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Cruzin' Cafe",
+    "rating":5,
+    "address":"3481 Lower Honoapiilani Rd",
+    "zipcode":96761,
+    "category":"Cafes Shaved Ice Hot Dogs",
+    "Maui_distance":42.45730585846355,
+    "Maui_Island_dist":42.45730585846355,
+    "Maui_island_dist":42.45730585846355,
+    "oahu_island_dist":154.21020372707588,
+    "Lanai_island_dist":29.102357077761795,
+    "Big_island_dist":182.65185640578554
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.6909,20.94196 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Kauhale Market",
+    "rating":5,
+    "address":"45 Kai Malina Pkwy",
+    "zipcode":96761,
+    "category":"Coffee & Tea Specialty Food Grocery",
+    "Maui_distance":42.491105859878004,
+    "Maui_Island_dist":42.491105859878004,
+    "Maui_island_dist":42.491105859878004,
+    "oahu_island_dist":154.15191639761028,
+    "Lanai_island_dist":28.41557411362068,
+    "Big_island_dist":182.2116788711216
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.993021,19.638679999999997 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"Frenchman's Café",
+    "rating":5,
+    "address":"75-5729 Alii Dr",
+    "zipcode":96740,
+    "category":"French Creperies Coffee & Tea",
+    "Maui_distance":123.74608236410253,
+    "Maui_Island_dist":123.74608236410253,
+    "Maui_island_dist":123.74608236410253,
+    "oahu_island_dist":289.2195560993314,
+    "Lanai_island_dist":159.28630996580395,
+    "Big_island_dist":37.62597079297704
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.9841511,19.62715119 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"Tea-licious Cafe",
+    "rating":5,
+    "address":"75-159 Lunapule Rd",
+    "zipcode":96740,
+    "category":"Coffee & Tea Breakfast & Brunch Patisserie/Cake Shop",
+    "Maui_distance":125.15977928590969,
+    "Maui_Island_dist":125.15977928590969,
+    "Maui_island_dist":125.15977928590969,
+    "oahu_island_dist":290.72652765304326,
+    "Lanai_island_dist":160.8163661017598,
+    "Big_island_dist":36.38249598319847
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.92986000000002,19.555979999999998 ]
+    },
+    "properties": {
+    "city":"Holualoa",
+    "name":"Heavenly Hawaiian Farms",
+    "rating":5,
+    "address":"78-1136 Bishop Rd",
+    "zipcode":96725,
+    "category":"Coffee & Tea Food Tours",
+    "Maui_distance":133.92389613272067,
+    "Maui_Island_dist":133.92389613272067,
+    "Maui_island_dist":133.92389613272067,
+    "oahu_island_dist":299.99457083902956,
+    "Lanai_island_dist":170.22713981688707,
+    "Big_island_dist":29.362530093157357
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.90944299999998,19.48818 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Da Kine Coffee",
+    "rating":5,
+    "address":"82-6127 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Coffee & Tea Acai Bowls Breakfast & Brunch",
+    "Maui_distance":141.16604042653307,
+    "Maui_Island_dist":141.16604042653307,
+    "Maui_island_dist":141.16604042653307,
+    "oahu_island_dist":306.1982655052452,
+    "Lanai_island_dist":176.96640732483684,
+    "Big_island_dist":27.626122062880885
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.4967477,22.2033321 ]
+    },
+    "properties": {
+    "city":"Hanalei",
+    "name":"Hanalei Cafe",
+    "rating":5,
+    "address":"Ching Young Village",
+    "zipcode":96714,
+    "category":"Cafes Coffee & Tea Sandwiches",
+    "Maui_distance":380.274215374817,
+    "Maui_Island_dist":380.274215374817,
+    "Maui_island_dist":380.274215374817,
+    "oahu_island_dist":184.19620693597582,
+    "Lanai_island_dist":319.1940067624926,
+    "Big_island_dist":505.8364604993471
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.4658319,21.90388967 ]
+    },
+    "properties": {
+    "city":"Koloa",
+    "name":"Aloha Roastery Specialty Coffee",
+    "rating":5,
+    "address":"5356 Koloa Rd",
+    "zipcode":96756,
+    "category":"Coffee Roasteries Coffee & Tea",
+    "Maui_distance":366.3786939583177,
+    "Maui_Island_dist":366.3786939583177,
+    "Maui_island_dist":366.3786939583177,
+    "oahu_island_dist":169.84791388935292,
+    "Lanai_island_dist":303.50256795133606,
+    "Big_island_dist":486.91583737930074
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.46431,21.90384 ]
+    },
+    "properties": {
+    "city":"Koloa",
+    "name":"Eden Coffee LLC",
+    "rating":5,
+    "address":"3477 Weliweli Rd",
+    "zipcode":96756,
+    "category":"Coffee & Tea Bakeries",
+    "Maui_distance":366.2161686153545,
+    "Maui_Island_dist":366.2161686153545,
+    "Maui_island_dist":366.2161686153545,
+    "oahu_island_dist":169.68420884327165,
+    "Lanai_island_dist":303.3430914741308,
+    "Big_island_dist":486.7660012117813
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.50796,21.92272 ]
+    },
+    "properties": {
+    "city":"Kalaheo",
+    "name":"Kind Koffee Company",
+    "rating":5,
+    "address":"3540 Koloa Rd",
+    "zipcode":96741,
+    "category":"Coffee & Tea",
+    "Maui_distance":371.4361203641965,
+    "Maui_Island_dist":371.4361203641965,
+    "Maui_island_dist":371.4361203641965,
+    "oahu_island_dist":174.8930015624448,
+    "Lanai_island_dist":308.57612550009105,
+    "Big_island_dist":491.956630183647
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.31326,22.08072 ]
+    },
+    "properties": {
+    "city":"Kapaa",
+    "name":"Garden Island Coffee",
+    "rating":5,
+    "address":"4-1604 Kuhio Hwy",
+    "zipcode":96746,
+    "category":"Coffee & Tea Coffee Roasteries",
+    "Maui_distance":356.6061145386733,
+    "Maui_Island_dist":356.6061145386733,
+    "Maui_island_dist":356.6061145386733,
+    "oahu_island_dist":160.33365581146785,
+    "Lanai_island_dist":295.27887792044845,
+    "Big_island_dist":481.7859795366294
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.31567619999998,22.14559325 ]
+    },
+    "properties": {
+    "city":"Anahola",
+    "name":"Kalalea Juice Hale",
+    "rating":5,
+    "address":"4390 Pu'u Hale Lp",
+    "zipcode":96703,
+    "category":"Coffee & Tea Juice Bars & Smoothies Acai Bowls",
+    "Maui_distance":359.37724664241654,
+    "Maui_Island_dist":359.37724664241654,
+    "Maui_island_dist":359.37724664241654,
+    "oahu_island_dist":163.470305972105,
+    "Lanai_island_dist":298.5060434708132,
+    "Big_island_dist":485.6430482955874
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.31883180000003,22.0742792 ]
+    },
+    "properties": {
+    "city":"Kapaa",
+    "name":"Coffee Talk in Pono Market",
+    "rating":5,
+    "address":"4-1300 Kuhio Hwy",
+    "zipcode":96746,
+    "category":"Coffee & Tea",
+    "Maui_distance":356.93809895998396,
+    "Maui_Island_dist":356.93809895998396,
+    "Maui_island_dist":356.93809895998396,
+    "oahu_island_dist":160.62381215707404,
+    "Lanai_island_dist":295.5473593704123,
+    "Big_island_dist":481.95305750377355
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.74336100000002,21.396355 ]
+    },
+    "properties": {
+    "city":"Kailua",
+    "name":"The Collective Cafe",
+    "rating":5,
+    "address":"407 Uluniu St",
+    "zipcode":96734,
+    "category":"Cafes Coffee & Tea Gluten-Free",
+    "Maui_distance":168.35727867376278,
+    "Maui_Island_dist":168.35727867376278,
+    "Maui_island_dist":168.35727867376278,
+    "oahu_island_dist":28.86434072814713,
+    "Lanai_island_dist":108.13072279719673,
+    "Big_island_dist":298.45595365892916
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.74374,21.395139999999998 ]
+    },
+    "properties": {
+    "city":"Kailua",
+    "name":"22Kailua",
+    "rating":5,
+    "address":"22 Oneawa St",
+    "zipcode":96734,
+    "category":"Coffee & Tea Breakfast & Brunch",
+    "Maui_distance":168.35141945886735,
+    "Maui_Island_dist":168.35141945886735,
+    "Maui_island_dist":168.35141945886735,
+    "oahu_island_dist":28.84198303100442,
+    "Lanai_island_dist":108.09910562961362,
+    "Big_island_dist":298.4101354381955
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.7429,21.39702 ]
+    },
+    "properties": {
+    "city":"Kailua",
+    "name":"Seaglass Coffee",
+    "rating":5,
+    "address":"340 Uluniu St",
+    "zipcode":96734,
+    "category":"Coffee & Tea",
+    "Maui_distance":168.3342620719994,
+    "Maui_Island_dist":168.3342620719994,
+    "Maui_island_dist":168.3342620719994,
+    "oahu_island_dist":28.90468701448038,
+    "Lanai_island_dist":108.12434629670996,
+    "Big_island_dist":298.4591495970418
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.74161999999998,21.39591 ]
+    },
+    "properties": {
+    "city":"Kailua",
+    "name":"Bits & Bites Cafe",
+    "rating":5,
+    "address":"320 Kuulei Rd",
+    "zipcode":96734,
+    "category":"Coffee & Tea Bakeries Desserts",
+    "Maui_distance":168.1603527884642,
+    "Maui_Island_dist":168.1603527884642,
+    "Maui_island_dist":168.1603527884642,
+    "oahu_island_dist":29.062520227234703,
+    "Lanai_island_dist":107.94302005352284,
+    "Big_island_dist":298.27676605758813
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.7214184,21.34814467 ]
+    },
+    "properties": {
+    "city":"Waimanalo",
+    "name":"Hawaiian Island Cafe",
+    "rating":5,
+    "address":"41-1537 Kalanianaole Hwy",
+    "zipcode":96795,
+    "category":"Cafes Breakfast & Brunch",
+    "Maui_distance":164.3333360881968,
+    "Maui_Island_dist":164.3333360881968,
+    "Maui_island_dist":164.3333360881968,
+    "oahu_island_dist":32.34679509026482,
+    "Lanai_island_dist":103.448026810994,
+    "Big_island_dist":293.450917094051
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.84315,21.45776 ]
+    },
+    "properties": {
+    "city":"Kaneohe",
+    "name":"Morning Glass Coffee + Cafe",
+    "rating":5,
+    "address":"47-200 Waihee Rd",
+    "zipcode":96744,
+    "category":"Cafes Coffee & Tea Patisserie/Cake Shop",
+    "Maui_distance":180.9896932894386,
+    "Maui_Island_dist":180.9896932894386,
+    "Maui_island_dist":180.9896932894386,
+    "oahu_island_dist":17.548885513000485,
+    "Lanai_island_dist":120.87896796490249,
+    "Big_island_dist":311.0578202466211
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.74338,21.39623 ]
+    },
+    "properties": {
+    "city":"Kailua",
+    "name":"The Collective Tattoo, cafe and gallery",
+    "rating":5,
+    "address":"407 Uluniu St",
+    "zipcode":96734,
+    "category":"Tattoo Coffee & Tea Internet Cafes",
+    "Maui_distance":168.3545998012424,
+    "Maui_Island_dist":168.3545998012424,
+    "Maui_island_dist":168.3545998012424,
+    "oahu_island_dist":28.86420916411796,
+    "Lanai_island_dist":108.12558994101381,
+    "Big_island_dist":298.44951025947483
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.0856986,19.72405864 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Moonstruck Patisserie",
+    "rating":5,
+    "address":"16 Furneaux Ln",
+    "zipcode":96720,
+    "category":"Coffee & Tea Bakeries Desserts",
+    "Maui_distance":176.11945829783926,
+    "Maui_Island_dist":176.11945829783926,
+    "Maui_island_dist":176.11945829783926,
+    "oahu_island_dist":368.016958407336,
+    "Lanai_island_dist":232.97954161043313,
+    "Big_island_dist":67.02181568030957
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.06894630000002,19.71297983 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Miyo's Tea Room",
+    "rating":5,
+    "address":"564 Hinano St",
+    "zipcode":96720,
+    "category":"Coffee & Tea Breakfast & Brunch Desserts",
+    "Maui_distance":178.27219419804226,
+    "Maui_Island_dist":178.27219419804226,
+    "Maui_island_dist":178.27219419804226,
+    "oahu_island_dist":370.186038865798,
+    "Lanai_island_dist":235.14899096569835,
+    "Big_island_dist":68.52512614976742
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.107518,19.55076 ]
+    },
+    "properties": {
+    "city":"Mountain View",
+    "name":"Koana",
+    "rating":5,
+    "address":"18-1325 Old Volcano Road",
+    "zipcode":96771,
+    "category":"Specialty Food Cafes",
+    "Maui_distance":185.69571229839852,
+    "Maui_Island_dist":185.69571229839852,
+    "Maui_island_dist":185.69571229839852,
+    "oahu_island_dist":374.6525189407958,
+    "Lanai_island_dist":239.89277752796662,
+    "Big_island_dist":62.055343929600156
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08629919999998,19.72358717 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Waipuna Coffee",
+    "rating":5,
+    "address":"277 Keawe St",
+    "zipcode":96720,
+    "category":"Coffee & Tea Cafes",
+    "Maui_distance":176.09665832899995,
+    "Maui_Island_dist":176.09665832899995,
+    "Maui_island_dist":176.09665832899995,
+    "oahu_island_dist":367.9812485690947,
+    "Lanai_island_dist":232.94417400460134,
+    "Big_island_dist":66.94462317388346
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08487,19.72264 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Kula Shave Ice",
+    "rating":5,
+    "address":"57 Mamo St",
+    "zipcode":96720,
+    "category":"Shaved Ice Coffee & Tea Acai Bowls",
+    "Maui_distance":176.28041791391396,
+    "Maui_Island_dist":176.28041791391396,
+    "Maui_island_dist":176.28041791391396,
+    "oahu_island_dist":368.16640093566855,
+    "Lanai_island_dist":233.12935912682647,
+    "Big_island_dist":67.07144581940325
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.0927582,21.31776428 ]
+    },
+    "properties": {
+    "city":"Kapolei",
+    "name":"Hawaiian Paradise Coffee",
+    "rating":5,
+    "address":"2176 Lauwiliwili St",
+    "zipcode":96707,
+    "category":"Coffee & Tea Cafes",
+    "Maui_distance":202.77871172403417,
+    "Maui_Island_dist":202.77871172403417,
+    "Maui_island_dist":202.77871172403417,
+    "oahu_island_dist":16.183292034545357,
+    "Lanai_island_dist":139.28963125171532,
+    "Big_island_dist":324.99902514174374
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.123823,21.342534 ]
+    },
+    "properties": {
+    "city":"Kapolei",
+    "name":"Starbucks",
+    "rating":5,
+    "address":"92-1047 Olani St",
+    "zipcode":96707,
+    "category":"Coffee & Tea",
+    "Maui_distance":206.7831199273054,
+    "Maui_Island_dist":206.7831199273054,
+    "Maui_island_dist":206.7831199273054,
+    "oahu_island_dist":16.96163436094534,
+    "Lanai_island_dist":143.4339299015302,
+    "Big_island_dist":329.28770708221657
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.88028,19.441389899999997 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Menehune Coffee",
+    "rating":5,
+    "address":"84-5227 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Coffee & Tea Breakfast & Brunch American (New)",
+    "Maui_distance":146.72034268192343,
+    "Maui_Island_dist":146.72034268192343,
+    "Maui_island_dist":146.72034268192343,
+    "oahu_island_dist":311.76235752368297,
+    "Lanai_island_dist":182.69251129013853,
+    "Big_island_dist":25.949069156714327
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.90944299999998,19.48818 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Da Kine Coffee",
+    "rating":5,
+    "address":"82-6127 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Coffee & Tea Acai Bowls Breakfast & Brunch",
+    "Maui_distance":141.16604042653307,
+    "Maui_Island_dist":141.16604042653307,
+    "Maui_island_dist":141.16604042653307,
+    "oahu_island_dist":306.1982655052452,
+    "Lanai_island_dist":176.96640732483684,
+    "Big_island_dist":27.626122062880885
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.9023339,19.48360996 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Sacred Grounds",
+    "rating":5,
+    "address":"82-6011 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Attraction Farms Coffee & Tea",
+    "Maui_distance":141.86446733755957,
+    "Maui_Island_dist":141.86446733755957,
+    "Maui_island_dist":141.86446733755957,
+    "oahu_island_dist":307.0985737152641,
+    "Lanai_island_dist":177.8258319625174,
+    "Big_island_dist":26.95210384335838
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.89833000000002,19.483064000000002 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Hala Tree",
+    "rating":5,
+    "address":"82-5966 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Attraction Farms Coffee & Tea Tours",
+    "Maui_distance":142.0650392528409,
+    "Maui_Island_dist":142.0650392528409,
+    "Maui_island_dist":142.0650392528409,
+    "oahu_island_dist":307.4707778653196,
+    "Lanai_island_dist":178.1513315301597,
+    "Big_island_dist":26.531124644012234
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.92986000000002,19.555979999999998 ]
+    },
+    "properties": {
+    "city":"Holualoa",
+    "name":"Heavenly Hawaiian Farms",
+    "rating":5,
+    "address":"78-1136 Bishop Rd",
+    "zipcode":96725,
+    "category":"Coffee & Tea Food Tours",
+    "Maui_distance":133.92389613272067,
+    "Maui_Island_dist":133.92389613272067,
+    "Maui_island_dist":133.92389613272067,
+    "oahu_island_dist":299.99457083902956,
+    "Lanai_island_dist":170.22713981688707,
+    "Big_island_dist":29.362530093157357
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.993021,19.638679999999997 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"Frenchman's Café",
+    "rating":5,
+    "address":"75-5729 Alii Dr",
+    "zipcode":96740,
+    "category":"French Creperies Coffee & Tea",
+    "Maui_distance":123.74608236410253,
+    "Maui_Island_dist":123.74608236410253,
+    "Maui_island_dist":123.74608236410253,
+    "oahu_island_dist":289.2195560993314,
+    "Lanai_island_dist":159.28630996580395,
+    "Big_island_dist":37.62597079297704
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.91069,19.4258 ]
+    },
+    "properties": {
+    "city":"Honaunau",
+    "name":"Pele Plantations",
+    "rating":5,
+    "address":"",
+    "zipcode":96726,
+    "category":"Coffee & Tea",
+    "Maui_distance":147.115335211217,
+    "Maui_Island_dist":147.115335211217,
+    "Maui_island_dist":147.115335211217,
+    "oahu_island_dist":310.28759005542395,
+    "Lanai_island_dist":181.82286426921738,
+    "Big_island_dist":29.67856990899048
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.917578,19.562328 ]
+    },
+    "properties": {
+    "city":"Holualoa",
+    "name":"Buddha's Cup",
+    "rating":5,
+    "address":"78-1377 Bishop Rd",
+    "zipcode":96725,
+    "category":"Coffee & Tea Coffee Roasteries",
+    "Maui_distance":133.77392020698653,
+    "Maui_Island_dist":133.77392020698653,
+    "Maui_island_dist":133.77392020698653,
+    "oahu_island_dist":300.62204832436976,
+    "Lanai_island_dist":170.62261993001204,
+    "Big_island_dist":28.036977629557867
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4861388,20.90222783 ]
+    },
+    "properties": {
+    "city":"Wailuku",
+    "name":"Made in Hope Cafe",
+    "rating":5,
+    "address":"752 Lower Main St",
+    "zipcode":96793,
+    "category":"Acai Bowls Bubble Tea Coffee & Tea",
+    "Maui_distance":20.13857734176244,
+    "Maui_Island_dist":20.13857734176244,
+    "Maui_island_dist":20.13857734176244,
+    "oahu_island_dist":176.998872652422,
+    "Lanai_island_dist":49.24933300045208,
+    "Big_island_dist":165.4474967078342
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.461049,20.891485 ]
+    },
+    "properties": {
+    "city":"Kahului",
+    "name":"Shaka Shots",
+    "rating":5,
+    "address":"16 Hobron Ave",
+    "zipcode":96732,
+    "category":"Coffee & Tea Food Trucks",
+    "Maui_distance":17.199167243658792,
+    "Maui_Island_dist":17.199167243658792,
+    "Maui_island_dist":17.199167243658792,
+    "oahu_island_dist":179.989471036012,
+    "Lanai_island_dist":51.856261983741014,
+    "Big_island_dist":162.99883247539884
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.47718480000003,20.89236221 ]
+    },
+    "properties": {
+    "city":"Kahului",
+    "name":"Maui Rainbow Tea",
+    "rating":5,
+    "address":"Maui Swap Meet",
+    "zipcode":96732,
+    "category":"Street Vendors Coffee & Tea",
+    "Maui_distance":18.76694121605429,
+    "Maui_Island_dist":18.76694121605429,
+    "Maui_island_dist":18.76694121605429,
+    "oahu_island_dist":178.2593392839086,
+    "Lanai_island_dist":50.08971268561953,
+    "Big_island_dist":164.05930861835995
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.107518,19.55076 ]
+    },
+    "properties": {
+    "city":"Mountain View",
+    "name":"Koana",
+    "rating":5,
+    "address":"18-1325 Old Volcano Road",
+    "zipcode":96771,
+    "category":"Specialty Food Cafes",
+    "Maui_distance":185.69571229839852,
+    "Maui_Island_dist":185.69571229839852,
+    "Maui_island_dist":185.69571229839852,
+    "oahu_island_dist":374.6525189407958,
+    "Lanai_island_dist":239.89277752796662,
+    "Big_island_dist":62.055343929600156
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.06894630000002,19.71297983 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Miyo's Tea Room",
+    "rating":5,
+    "address":"564 Hinano St",
+    "zipcode":96720,
+    "category":"Coffee & Tea Breakfast & Brunch Desserts",
+    "Maui_distance":178.27219419804226,
+    "Maui_Island_dist":178.27219419804226,
+    "Maui_island_dist":178.27219419804226,
+    "oahu_island_dist":370.186038865798,
+    "Lanai_island_dist":235.14899096569835,
+    "Big_island_dist":68.52512614976742
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.0856986,19.72405864 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Moonstruck Patisserie",
+    "rating":5,
+    "address":"16 Furneaux Ln",
+    "zipcode":96720,
+    "category":"Coffee & Tea Bakeries Desserts",
+    "Maui_distance":176.11945829783926,
+    "Maui_Island_dist":176.11945829783926,
+    "Maui_island_dist":176.11945829783926,
+    "oahu_island_dist":368.016958407336,
+    "Lanai_island_dist":232.97954161043313,
+    "Big_island_dist":67.02181568030957
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08629919999998,19.72358717 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Waipuna Coffee",
+    "rating":5,
+    "address":"277 Keawe St",
+    "zipcode":96720,
+    "category":"Coffee & Tea Cafes",
+    "Maui_distance":176.09665832899995,
+    "Maui_Island_dist":176.09665832899995,
+    "Maui_island_dist":176.09665832899995,
+    "oahu_island_dist":367.9812485690947,
+    "Lanai_island_dist":232.94417400460134,
+    "Big_island_dist":66.94462317388346
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08487,19.72264 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Kula Shave Ice",
+    "rating":5,
+    "address":"57 Mamo St",
+    "zipcode":96720,
+    "category":"Shaved Ice Coffee & Tea Acai Bowls",
+    "Maui_distance":176.28041791391396,
+    "Maui_Island_dist":176.28041791391396,
+    "Maui_island_dist":176.28041791391396,
+    "oahu_island_dist":368.16640093566855,
+    "Lanai_island_dist":233.12935912682647,
+    "Big_island_dist":67.07144581940325
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.4682913,20.0793757 ]
+    },
+    "properties": {
+    "city":"Honokaa",
+    "name":"Sea DandeLion Cafe and Awa Bar",
+    "rating":5,
+    "address":"45-3590 Mamane St",
+    "zipcode":96727,
+    "category":"Cafes Vegetarian Juice Bars & Smoothies",
+    "Maui_distance":120.53869165092767,
+    "Maui_Island_dist":120.53869165092767,
+    "Maui_island_dist":120.53869165092767,
+    "oahu_island_dist":313.7110870564701,
+    "Lanai_island_dist":178.7568488563321,
+    "Big_island_dist":58.550875165582404
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.47773,20.04168 ]
+    },
+    "properties": {
+    "city":"Honokaa",
+    "name":"Hawaiian Cloud Forest Coffee",
+    "rating":5,
+    "address":"453523 Kahana Dr",
+    "zipcode":96727,
+    "category":"Coffee & Tea",
+    "Maui_distance":122.07439431009185,
+    "Maui_Island_dist":122.07439431009185,
+    "Maui_island_dist":122.07439431009185,
+    "oahu_island_dist":314.4992455657894,
+    "Lanai_island_dist":179.48250319811925,
+    "Big_island_dist":54.625755830960216
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.662554,19.049457999999998 ]
+    },
+    "properties": {
+    "city":"Naalehu",
+    "name":"Paradise Meadows, South Point Road",
+    "rating":5,
+    "address":"93-2199 S Point Rd",
+    "zipcode":96772,
+    "category":"Tours Coffee & Tea Chocolatiers & Shops",
+    "Maui_distance":192.491225911161,
+    "Maui_Island_dist":192.491225911161,
+    "Maui_island_dist":192.491225911161,
+    "oahu_island_dist":356.44356915781754,
+    "Lanai_island_dist":228.8642848552191,
+    "Big_island_dist":49.96296245576104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.10341119999998,21.592761399999997 ]
+    },
+    "properties": {
+    "city":"Haleiwa",
+    "name":"1979 Hawaii",
+    "rating":5,
+    "address":"",
+    "zipcode":96712,
+    "category":"Coffee & Tea Juice Bars & Smoothies Food Stands",
+    "Maui_distance":213.01677084453766,
+    "Maui_Island_dist":213.01677084453766,
+    "Maui_island_dist":213.01677084453766,
+    "oahu_island_dist":19.577988484062015,
+    "Lanai_island_dist":152.80718567325275,
+    "Big_island_dist":342.4185792247824
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.662554,19.049457999999998 ]
+    },
+    "properties": {
+    "city":"Naalehu",
+    "name":"Paradise Meadows, South Point Road",
+    "rating":5,
+    "address":"93-2199 S Point Rd",
+    "zipcode":96772,
+    "category":"Tours Coffee & Tea Chocolatiers & Shops",
+    "Maui_distance":192.491225911161,
+    "Maui_Island_dist":192.491225911161,
+    "Maui_island_dist":192.491225911161,
+    "oahu_island_dist":356.44356915781754,
+    "Lanai_island_dist":228.8642848552191,
+    "Big_island_dist":49.96296245576104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.107518,19.55076 ]
+    },
+    "properties": {
+    "city":"Mountain View",
+    "name":"Koana",
+    "rating":5,
+    "address":"18-1325 Old Volcano Road",
+    "zipcode":96771,
+    "category":"Specialty Food Cafes",
+    "Maui_distance":185.69571229839852,
+    "Maui_Island_dist":185.69571229839852,
+    "Maui_island_dist":185.69571229839852,
+    "oahu_island_dist":374.6525189407958,
+    "Lanai_island_dist":239.89277752796662,
+    "Big_island_dist":62.055343929600156
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.662554,19.049457999999998 ]
+    },
+    "properties": {
+    "city":"Naalehu",
+    "name":"Paradise Meadows, South Point Road",
+    "rating":5,
+    "address":"93-2199 S Point Rd",
+    "zipcode":96772,
+    "category":"Tours Coffee & Tea Chocolatiers & Shops",
+    "Maui_distance":192.491225911161,
+    "Maui_Island_dist":192.491225911161,
+    "Maui_island_dist":192.491225911161,
+    "oahu_island_dist":356.44356915781754,
+    "Lanai_island_dist":228.8642848552191,
+    "Big_island_dist":49.96296245576104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.17568490000002,21.405424 ]
+    },
+    "properties": {
+    "city":"Waianae",
+    "name":"Maili Shave Ice and Snacks",
+    "rating":5,
+    "address":"87-139 Hookele St",
+    "zipcode":96792,
+    "category":"Desserts Coffee & Tea Shaved Ice",
+    "Maui_distance":214.12405406704474,
+    "Maui_Island_dist":214.12405406704474,
+    "Maui_island_dist":214.12405406704474,
+    "oahu_island_dist":19.814773467554435,
+    "Lanai_island_dist":151.22581851693678,
+    "Big_island_dist":337.68474198892994
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8208122,21.2979324 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Rocket Coffee Mobile",
+    "rating":5,
+    "address":"2500 Campus Rd",
+    "zipcode":96822,
+    "category":"Food Trucks Coffee & Tea Breakfast & Brunch",
+    "Maui_distance":173.17258396060666,
+    "Maui_Island_dist":173.17258396060666,
+    "Maui_island_dist":173.17258396060666,
+    "oahu_island_dist":24.650177415095655,
+    "Lanai_island_dist":110.72298529095985,
+    "Big_island_dist":299.0703349566519
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.4682913,20.0793757 ]
+    },
+    "properties": {
+    "city":"Honokaa",
+    "name":"Sea DandeLion Cafe and Awa Bar",
+    "rating":5,
+    "address":"45-3590 Mamane St",
+    "zipcode":96727,
+    "category":"Cafes Vegetarian Juice Bars & Smoothies",
+    "Maui_distance":120.53869165092767,
+    "Maui_Island_dist":120.53869165092767,
+    "Maui_island_dist":120.53869165092767,
+    "oahu_island_dist":313.7110870564701,
+    "Lanai_island_dist":178.7568488563321,
+    "Big_island_dist":58.550875165582404
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.47773,20.04168 ]
+    },
+    "properties": {
+    "city":"Honokaa",
+    "name":"Hawaiian Cloud Forest Coffee",
+    "rating":5,
+    "address":"453523 Kahana Dr",
+    "zipcode":96727,
+    "category":"Coffee & Tea",
+    "Maui_distance":122.07439431009185,
+    "Maui_Island_dist":122.07439431009185,
+    "Maui_island_dist":122.07439431009185,
+    "oahu_island_dist":314.4992455657894,
+    "Lanai_island_dist":179.48250319811925,
+    "Big_island_dist":54.625755830960216
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.662554,19.049457999999998 ]
+    },
+    "properties": {
+    "city":"Naalehu",
+    "name":"Paradise Meadows, South Point Road",
+    "rating":5,
+    "address":"93-2199 S Point Rd",
+    "zipcode":96772,
+    "category":"Tours Coffee & Tea Chocolatiers & Shops",
+    "Maui_distance":192.491225911161,
+    "Maui_Island_dist":192.491225911161,
+    "Maui_island_dist":192.491225911161,
+    "oahu_island_dist":356.44356915781754,
+    "Lanai_island_dist":228.8642848552191,
+    "Big_island_dist":49.96296245576104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.44037,20.6872 ]
+    },
+    "properties": {
+    "city":"Wailea",
+    "name":"Teapresso Bar - Wailea",
+    "rating":5,
+    "address":"3750 Wailea Alanui Dr",
+    "zipcode":96753,
+    "category":"Coffee & Tea Bubble Tea Juice Bars & Smoothies",
+    "Maui_distance":16.532990863156677,
+    "Maui_Island_dist":16.532990863156677,
+    "Maui_island_dist":16.532990863156677,
+    "oahu_island_dist":189.66467849009038,
+    "Lanai_island_dist":55.61860883753192,
+    "Big_island_dist":144.61094622965922
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.33884,20.71935 ]
+    },
+    "properties": {
+    "city":"Kula",
+    "name":"Maui Estate Coffee",
+    "rating":5,
+    "address":"40 Pilikino Pl",
+    "zipcode":96790,
+    "category":"Coffee & Tea Coffee Roasteries",
+    "Maui_distance":8.078635956505737,
+    "Maui_Island_dist":8.078635956505737,
+    "Maui_island_dist":8.078635956505737,
+    "oahu_island_dist":198.77241153293267,
+    "Lanai_island_dist":65.95529758093437,
+    "Big_island_dist":140.91129555246718
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4385355,20.75082854 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Kaimana Coffee",
+    "rating":5,
+    "address":"1323 N Holopono St",
+    "zipcode":96753,
+    "category":"Coffee & Tea Food Trucks Bagels",
+    "Maui_distance":12.797712140473493,
+    "Maui_Island_dist":12.797712140473493,
+    "Maui_island_dist":12.797712140473493,
+    "oahu_island_dist":187.30121119760517,
+    "Lanai_island_dist":54.51165016815313,
+    "Big_island_dist":149.73560440871842
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.45089769999998,20.72993459 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Your Bliss Cafe",
+    "rating":5,
+    "address":"1993 S Kihei Rd",
+    "zipcode":96753,
+    "category":"Coffee & Tea Cafes Shaved Ice",
+    "Maui_distance":14.944642855472027,
+    "Maui_Island_dist":14.944642855472027,
+    "Maui_island_dist":14.944642855472027,
+    "oahu_island_dist":186.85215967812024,
+    "Lanai_island_dist":53.508324377838704,
+    "Big_island_dist":148.8079641889622
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.680134,20.876049 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Vigilatte Artisan Coffee",
+    "rating":5,
+    "address":"844 Front St",
+    "zipcode":96761,
+    "category":"Coffee & Tea Bakeries",
+    "Maui_distance":39.496524600866714,
+    "Maui_Island_dist":39.496524600866714,
+    "Maui_island_dist":39.496524600866714,
+    "oahu_island_dist":157.62820934838936,
+    "Lanai_island_dist":27.547216012653248,
+    "Big_island_dist":176.25988087633516
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.7214184,21.34814467 ]
+    },
+    "properties": {
+    "city":"Waimanalo",
+    "name":"Hawaiian Island Cafe",
+    "rating":5,
+    "address":"41-1537 Kalanianaole Hwy",
+    "zipcode":96795,
+    "category":"Cafes Breakfast & Brunch",
+    "Maui_distance":164.3333360881968,
+    "Maui_Island_dist":164.3333360881968,
+    "Maui_island_dist":164.3333360881968,
+    "oahu_island_dist":32.34679509026482,
+    "Lanai_island_dist":103.448026810994,
+    "Big_island_dist":293.450917094051
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.68766100000002,20.950338000000002 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Cruzin' Cafe",
+    "rating":5,
+    "address":"3481 Lower Honoapiilani Rd",
+    "zipcode":96761,
+    "category":"Cafes Shaved Ice Hot Dogs",
+    "Maui_distance":42.45730585846355,
+    "Maui_Island_dist":42.45730585846355,
+    "Maui_island_dist":42.45730585846355,
+    "oahu_island_dist":154.21020372707588,
+    "Lanai_island_dist":29.102357077761795,
+    "Big_island_dist":182.65185640578554
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.680134,20.876049 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Vigilatte Artisan Coffee",
+    "rating":5,
+    "address":"844 Front St",
+    "zipcode":96761,
+    "category":"Coffee & Tea Bakeries",
+    "Maui_distance":39.496524600866714,
+    "Maui_Island_dist":39.496524600866714,
+    "Maui_island_dist":39.496524600866714,
+    "oahu_island_dist":157.62820934838936,
+    "Lanai_island_dist":27.547216012653248,
+    "Big_island_dist":176.25988087633516
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.68766100000002,20.950338000000002 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Cruzin' Cafe",
+    "rating":5,
+    "address":"3481 Lower Honoapiilani Rd",
+    "zipcode":96761,
+    "category":"Cafes Shaved Ice Hot Dogs",
+    "Maui_distance":42.45730585846355,
+    "Maui_Island_dist":42.45730585846355,
+    "Maui_island_dist":42.45730585846355,
+    "oahu_island_dist":154.21020372707588,
+    "Lanai_island_dist":29.102357077761795,
+    "Big_island_dist":182.65185640578554
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8341449,21.28637399 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Suzie Wong's Hideaway",
+    "rating":5,
+    "address":"1913 Dudiot Ln",
+    "zipcode":96815,
+    "category":"Dive Bars",
+    "Maui_distance":174.24662442936557,
+    "Maui_Island_dist":174.24662442936557,
+    "Maui_island_dist":174.24662442936557,
+    "oahu_island_dist":24.223536442736613,
+    "Lanai_island_dist":111.55407104089589,
+    "Big_island_dist":299.560558449034
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.860017,21.300523000000002 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Ya-Ya’s Chophouse & Seafood",
+    "rating":5,
+    "address":"508 Keawe St",
+    "zipcode":96813,
+    "category":"Cocktail Bars Seafood Steakhouses",
+    "Maui_distance":177.41841650050088,
+    "Maui_Island_dist":177.41841650050088,
+    "Maui_island_dist":177.41841650050088,
+    "oahu_island_dist":21.104441406698516,
+    "Lanai_island_dist":114.77497211143296,
+    "Big_island_dist":302.741894392598
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8537063,21.29892424 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"The Brewseum",
+    "rating":5,
+    "address":"901 Waimanu St",
+    "zipcode":96814,
+    "category":"Museums Beer Bar",
+    "Maui_distance":176.6994697171448,
+    "Maui_Island_dist":176.6994697171448,
+    "Maui_island_dist":176.6994697171448,
+    "oahu_island_dist":21.735518067447256,
+    "Lanai_island_dist":114.0697332144514,
+    "Big_island_dist":302.07801784980836
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.83694,21.29212 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Billion Pocha 1201",
+    "rating":5,
+    "address":"1683 Kalakaua Ave",
+    "zipcode":96826,
+    "category":"Bars Korean Karaoke",
+    "Maui_distance":174.71356684052049,
+    "Maui_Island_dist":174.71356684052049,
+    "Maui_island_dist":174.71356684052049,
+    "oahu_island_dist":23.604840811322944,
+    "Lanai_island_dist":112.08526219258475,
+    "Big_island_dist":300.1601644214641
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.512378,20.79032183 ]
+    },
+    "properties": {
+    "city":"Maalaea",
+    "name":"Club Alii Nui Private Boat Charters",
+    "rating":5,
+    "address":"300 Maalaea Harbor Rd",
+    "zipcode":96793,
+    "category":"Dance Clubs Boat Charters Bars",
+    "Maui_distance":20.06968806416965,
+    "Maui_Island_dist":20.06968806416965,
+    "Maui_island_dist":20.06968806416965,
+    "oahu_island_dist":178.18401650261333,
+    "Lanai_island_dist":45.898183771442945,
+    "Big_island_dist":157.8176233989339
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.69428630000002,20.9151206 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Pau Huaka'i Tiki Bar",
+    "rating":5,
+    "address":"180 Nohea Kai Dr",
+    "zipcode":96761,
+    "category":"Tiki Bars",
+    "Maui_distance":41.9890384758974,
+    "Maui_Island_dist":41.9890384758974,
+    "Maui_island_dist":41.9890384758974,
+    "oahu_island_dist":154.73081775579246,
+    "Lanai_island_dist":27.047089957542813,
+    "Big_island_dist":180.32981945163803
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.66527,21.00144 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"The Hideaway",
+    "rating":5,
+    "address":"1 Bay Dr",
+    "zipcode":96761,
+    "category":"Tapas/Small Plates Cocktail Bars",
+    "Maui_distance":42.43199935343921,
+    "Maui_Island_dist":42.43199935343921,
+    "Maui_island_dist":42.43199935343921,
+    "oahu_island_dist":154.96711051761073,
+    "Lanai_island_dist":33.79248225244227,
+    "Big_island_dist":185.23637671931084
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.99327399999999,19.64256388 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"TJ's Pau Hana Hale",
+    "rating":5,
+    "address":"75-5660 Kopiko St",
+    "zipcode":96740,
+    "category":"Sports Bars",
+    "Maui_distance":123.36162225470349,
+    "Maui_Island_dist":123.36162225470349,
+    "Maui_island_dist":123.36162225470349,
+    "oahu_island_dist":288.94523661951666,
+    "Lanai_island_dist":158.96745991558632,
+    "Big_island_dist":37.756600020527614
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.999148,19.648316 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"BAR CODE Karaoke & Grill",
+    "rating":5,
+    "address":"74-5467 Kaiwi St",
+    "zipcode":96740,
+    "category":"Karaoke Lounges",
+    "Maui_distance":122.60902708649458,
+    "Maui_Island_dist":122.60902708649458,
+    "Maui_island_dist":122.60902708649458,
+    "oahu_island_dist":288.06994424555825,
+    "Lanai_island_dist":158.09986699522557,
+    "Big_island_dist":38.54361697743677
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.49633,22.22165 ]
+    },
+    "properties": {
+    "city":"Princeville",
+    "name":"Princeville Bar",
+    "rating":5,
+    "address":"5520 Ka Haku Rd",
+    "zipcode":96722,
+    "category":"Bars",
+    "Maui_distance":380.95258671292106,
+    "Maui_Island_dist":380.95258671292106,
+    "Maui_island_dist":380.95258671292106,
+    "oahu_island_dist":184.97772548274483,
+    "Lanai_island_dist":319.99733160943714,
+    "Big_island_dist":506.81578270742006
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.43974,21.8753 ]
+    },
+    "properties": {
+    "city":"Poipu",
+    "name":"Shipwreck Bar",
+    "rating":5,
+    "address":"Grand Hyatt Kauai Resort Spa",
+    "zipcode":96756,
+    "category":"Cocktail Bars",
+    "Maui_distance":362.71042734407615,
+    "Maui_Island_dist":362.71042734407615,
+    "Maui_island_dist":362.71042734407615,
+    "oahu_island_dist":166.23926381847707,
+    "Lanai_island_dist":299.72637600935985,
+    "Big_island_dist":482.93015712522686
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.46379,21.90468 ]
+    },
+    "properties": {
+    "city":"Koloa",
+    "name":"The Tasting Room",
+    "rating":5,
+    "address":"5476 Koloa Rd",
+    "zipcode":96756,
+    "category":"Wine Bars",
+    "Maui_distance":366.18806405119705,
+    "Maui_Island_dist":366.18806405119705,
+    "Maui_island_dist":366.18806405119705,
+    "oahu_island_dist":169.6534849128389,
+    "Lanai_island_dist":303.32097878382865,
+    "Big_island_dist":486.75864489293417
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.4837,21.88542 ]
+    },
+    "properties": {
+    "city":"Koloa",
+    "name":"Makai Grill + Bar",
+    "rating":5,
+    "address":"2700 Ke Alaula",
+    "zipcode":96756,
+    "category":"Bars Poke Sandwiches",
+    "Maui_distance":367.685582350047,
+    "Maui_Island_dist":367.685582350047,
+    "Maui_island_dist":367.685582350047,
+    "oahu_island_dist":171.2273575856543,
+    "Lanai_island_dist":304.6660751761736,
+    "Big_island_dist":487.7079533073191
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08761869999998,19.7262907 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Hale Hookah",
+    "rating":5,
+    "address":"60 Waianuenue Ave",
+    "zipcode":96720,
+    "category":"Hookah Bars Head Shops",
+    "Maui_distance":175.81253016225804,
+    "Maui_Island_dist":175.81253016225804,
+    "Maui_island_dist":175.81253016225804,
+    "oahu_island_dist":367.7217757808065,
+    "Lanai_island_dist":232.68393453043075,
+    "Big_island_dist":66.87872594747905
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.1255481,21.33935521 ]
+    },
+    "properties": {
+    "city":"Kapolei",
+    "name":"Bar at Hokulea",
+    "rating":5,
+    "address":"92-1001 Olani St",
+    "zipcode":96707,
+    "category":"Lounges",
+    "Maui_distance":206.88032325521883,
+    "Maui_Island_dist":206.88032325521883,
+    "Maui_island_dist":206.88032325521883,
+    "oahu_island_dist":17.309629932995147,
+    "Lanai_island_dist":143.49240772380963,
+    "Big_island_dist":329.2661267011221
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.99327399999999,19.64256388 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"TJ's Pau Hana Hale",
+    "rating":5,
+    "address":"75-5660 Kopiko St",
+    "zipcode":96740,
+    "category":"Sports Bars",
+    "Maui_distance":123.36162225470349,
+    "Maui_Island_dist":123.36162225470349,
+    "Maui_island_dist":123.36162225470349,
+    "oahu_island_dist":288.94523661951666,
+    "Lanai_island_dist":158.96745991558632,
+    "Big_island_dist":37.756600020527614
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.999148,19.648316 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"BAR CODE Karaoke & Grill",
+    "rating":5,
+    "address":"74-5467 Kaiwi St",
+    "zipcode":96740,
+    "category":"Karaoke Lounges",
+    "Maui_distance":122.60902708649458,
+    "Maui_Island_dist":122.60902708649458,
+    "Maui_island_dist":122.60902708649458,
+    "oahu_island_dist":288.06994424555825,
+    "Lanai_island_dist":158.09986699522557,
+    "Big_island_dist":38.54361697743677
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4893242,20.89887845 ]
+    },
+    "properties": {
+    "city":"Wailuku",
+    "name":"Poni",
+    "rating":5,
+    "address":"1063 Lower Main St",
+    "zipcode":96793,
+    "category":"Karaoke Cocktail Bars",
+    "Maui_distance":20.266303757691883,
+    "Maui_Island_dist":20.266303757691883,
+    "Maui_island_dist":20.266303757691883,
+    "oahu_island_dist":176.76979061560036,
+    "Lanai_island_dist":48.84755702635574,
+    "Big_island_dist":165.36069255288663
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.0818481,19.71924019 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Kukuau Studio",
+    "rating":5,
+    "address":"43-D Kukuau St",
+    "zipcode":96720,
+    "category":"Music Venues Recording & Rehearsal Studios",
+    "Maui_distance":176.7564278974514,
+    "Maui_Island_dist":176.7564278974514,
+    "Maui_island_dist":176.7564278974514,
+    "oahu_island_dist":368.6255697713698,
+    "Lanai_island_dist":233.58919105467737,
+    "Big_island_dist":67.30300435419035
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.824432,19.994443 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"The Reef Lounge",
+    "rating":5,
+    "address":"66-100 Kauna'Oa Dr",
+    "zipcode":96743,
+    "category":"Lounges",
+    "Maui_distance":99.24191846681674,
+    "Maui_Island_dist":99.24191846681674,
+    "Maui_island_dist":99.24191846681674,
+    "oahu_island_dist":283.2884625013797,
+    "Lanai_island_dist":148.74250163861947,
+    "Big_island_dist":49.023166899979934
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.10313,21.58669 ]
+    },
+    "properties": {
+    "city":"Haleiwa",
+    "name":"Maya's Tapas and Wines",
+    "rating":5,
+    "address":"66-250 Kamehameha Hwy",
+    "zipcode":96712,
+    "category":"Tapas/Small Plates Mediterranean Beer Bar",
+    "Maui_distance":212.75096185878414,
+    "Maui_Island_dist":212.75096185878414,
+    "Maui_island_dist":212.75096185878414,
+    "oahu_island_dist":19.055814615703444,
+    "Lanai_island_dist":152.46072354473043,
+    "Big_island_dist":342.0145020638128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.016037,21.447959899999997 ]
+    },
+    "properties": {
+    "city":"Mililani",
+    "name":"We Are the Bartenders",
+    "rating":5,
+    "address":"",
+    "zipcode":96789,
+    "category":"Bartenders Cocktail Bars",
+    "Maui_distance":198.62096917344337,
+    "Maui_Island_dist":198.62096917344337,
+    "Maui_island_dist":198.62096917344337,
+    "oahu_island_dist":2.001977562498193,
+    "Lanai_island_dist":137.04602653154015,
+    "Big_island_dist":325.69973539665676
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.824432,19.994443 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"The Reef Lounge",
+    "rating":5,
+    "address":"66-100 Kauna'Oa Dr",
+    "zipcode":96743,
+    "category":"Lounges",
+    "Maui_distance":99.24191846681674,
+    "Maui_Island_dist":99.24191846681674,
+    "Maui_island_dist":99.24191846681674,
+    "oahu_island_dist":283.2884625013797,
+    "Lanai_island_dist":148.74250163861947,
+    "Big_island_dist":49.023166899979934
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.10313,21.58669 ]
+    },
+    "properties": {
+    "city":"Haleiwa",
+    "name":"Maya's Tapas and Wines",
+    "rating":5,
+    "address":"66-250 Kamehameha Hwy",
+    "zipcode":96712,
+    "category":"Tapas/Small Plates Mediterranean Beer Bar",
+    "Maui_distance":212.75096185878414,
+    "Maui_Island_dist":212.75096185878414,
+    "Maui_island_dist":212.75096185878414,
+    "oahu_island_dist":19.055814615703444,
+    "Lanai_island_dist":152.46072354473043,
+    "Big_island_dist":342.0145020638128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.1255481,21.33935521 ]
+    },
+    "properties": {
+    "city":"Kapolei",
+    "name":"Bar at Hokulea",
+    "rating":5,
+    "address":"92-1001 Olani St",
+    "zipcode":96707,
+    "category":"Lounges",
+    "Maui_distance":206.88032325521883,
+    "Maui_Island_dist":206.88032325521883,
+    "Maui_island_dist":206.88032325521883,
+    "oahu_island_dist":17.309629932995147,
+    "Lanai_island_dist":143.49240772380963,
+    "Big_island_dist":329.2661267011221
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.824432,19.994443 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"The Reef Lounge",
+    "rating":5,
+    "address":"66-100 Kauna'Oa Dr",
+    "zipcode":96743,
+    "category":"Lounges",
+    "Maui_distance":99.24191846681674,
+    "Maui_Island_dist":99.24191846681674,
+    "Maui_island_dist":99.24191846681674,
+    "oahu_island_dist":283.2884625013797,
+    "Lanai_island_dist":148.74250163861947,
+    "Big_island_dist":49.023166899979934
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.442946,20.687443 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Maluhia Bar",
+    "rating":5,
+    "address":"3700 Wailea Alanui Dr",
+    "zipcode":96753,
+    "category":"Bars",
+    "Maui_distance":16.726152848334678,
+    "Maui_Island_dist":16.726152848334678,
+    "Maui_island_dist":16.726152848334678,
+    "oahu_island_dist":189.3932956540616,
+    "Lanai_island_dist":55.33567913611006,
+    "Big_island_dist":144.802225133749
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.66527,21.00144 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"The Hideaway",
+    "rating":5,
+    "address":"1 Bay Dr",
+    "zipcode":96761,
+    "category":"Tapas/Small Plates Cocktail Bars",
+    "Maui_distance":42.43199935343921,
+    "Maui_Island_dist":42.43199935343921,
+    "Maui_island_dist":42.43199935343921,
+    "oahu_island_dist":154.96711051761073,
+    "Lanai_island_dist":33.79248225244227,
+    "Big_island_dist":185.23637671931084
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.69428630000002,20.9151206 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Pau Huaka'i Tiki Bar",
+    "rating":5,
+    "address":"180 Nohea Kai Dr",
+    "zipcode":96761,
+    "category":"Tiki Bars",
+    "Maui_distance":41.9890384758974,
+    "Maui_Island_dist":41.9890384758974,
+    "Maui_island_dist":41.9890384758974,
+    "oahu_island_dist":154.73081775579246,
+    "Lanai_island_dist":27.047089957542813,
+    "Big_island_dist":180.32981945163803
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.66527,21.00144 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"The Hideaway",
+    "rating":5,
+    "address":"1 Bay Dr",
+    "zipcode":96761,
+    "category":"Tapas/Small Plates Cocktail Bars",
+    "Maui_distance":42.43199935343921,
+    "Maui_Island_dist":42.43199935343921,
+    "Maui_island_dist":42.43199935343921,
+    "oahu_island_dist":154.96711051761073,
+    "Lanai_island_dist":33.79248225244227,
+    "Big_island_dist":185.23637671931084
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.69428630000002,20.9151206 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Pau Huaka'i Tiki Bar",
+    "rating":5,
+    "address":"180 Nohea Kai Dr",
+    "zipcode":96761,
+    "category":"Tiki Bars",
+    "Maui_distance":41.9890384758974,
+    "Maui_Island_dist":41.9890384758974,
+    "Maui_island_dist":41.9890384758974,
+    "oahu_island_dist":154.73081775579246,
+    "Lanai_island_dist":27.047089957542813,
+    "Big_island_dist":180.32981945163803
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.80013,21.28252 ]
+    },
+    "properties": {
+    "city":"Honolulu",
+    "name":"Oahu Grill",
+    "rating":5,
+    "address":"1137 11th Ave",
+    "zipcode":96816,
+    "category":"Hawaiian Salad Soup",
+    "Maui_distance":170.5119469280206,
+    "Maui_Island_dist":170.5119469280206,
+    "Maui_island_dist":170.5119469280206,
+    "oahu_island_dist":27.441664943088803,
+    "Lanai_island_dist":107.96482705633376,
+    "Big_island_dist":296.2794745303412
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4545956,20.75152342 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Tanpopo",
+    "rating":5,
+    "address":"1215 S Kihei Rd",
+    "zipcode":96753,
+    "category":"Japanese Italian Comfort Food",
+    "Maui_distance":14.442175158321309,
+    "Maui_Island_dist":14.442175158321309,
+    "Maui_island_dist":14.442175158321309,
+    "oahu_island_dist":185.62355030561605,
+    "Lanai_island_dist":52.73569357249741,
+    "Big_island_dist":150.8296332504761
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4537786,20.75023346 ]
+    },
+    "properties": {
+    "city":"Kihei",
+    "name":"Da Nani Pirates",
+    "rating":5,
+    "address":"1 Piikea Ave",
+    "zipcode":96753,
+    "category":"Fish & Chips Seafood Food Trucks",
+    "Maui_distance":14.400675709335962,
+    "Maui_Island_dist":14.400675709335962,
+    "Maui_island_dist":14.400675709335962,
+    "oahu_island_dist":185.75763536314093,
+    "Lanai_island_dist":52.84499339349517,
+    "Big_island_dist":150.66994021495407
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.67819,20.87772 ]
+    },
+    "properties": {
+    "city":"Lahaina",
+    "name":"Eating Local",
+    "rating":5,
+    "address":"840 Wainee St",
+    "zipcode":96761,
+    "category":"Seafood Hawaiian",
+    "Maui_distance":39.31956777257091,
+    "Maui_Island_dist":39.31956777257091,
+    "Maui_island_dist":39.31956777257091,
+    "oahu_island_dist":157.766522457317,
+    "Lanai_island_dist":27.790696882866705,
+    "Big_island_dist":176.2517795792187
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.993021,19.638679999999997 ]
+    },
+    "properties": {
+    "city":"Kailua-Kona",
+    "name":"Frenchman's Café",
+    "rating":5,
+    "address":"75-5729 Alii Dr",
+    "zipcode":96740,
+    "category":"French Creperies Coffee & Tea",
+    "Maui_distance":123.74608236410253,
+    "Maui_Island_dist":123.74608236410253,
+    "Maui_island_dist":123.74608236410253,
+    "oahu_island_dist":289.2195560993314,
+    "Lanai_island_dist":159.28630996580395,
+    "Big_island_dist":37.62597079297704
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.879926,19.453806 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Kaaloa's Super Js Authentic Hawaiian",
+    "rating":5,
+    "address":"83-5409 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Hawaiian",
+    "Maui_distance":145.54900385797362,
+    "Maui_Island_dist":145.54900385797362,
+    "Maui_island_dist":145.54900385797362,
+    "oahu_island_dist":310.96198283756684,
+    "Lanai_island_dist":181.74238849018707,
+    "Big_island_dist":25.439695380556035
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.4795303,22.2124098 ]
+    },
+    "properties": {
+    "city":"Princeville",
+    "name":"Saenz Ohana Breakfast",
+    "rating":5,
+    "address":"4488 Hanalei Plantation Rd",
+    "zipcode":96722,
+    "category":"Breakfast & Brunch Food Trucks Tacos",
+    "Maui_distance":378.86025742777554,
+    "Maui_Island_dist":378.86025742777554,
+    "Maui_island_dist":378.86025742777554,
+    "oahu_island_dist":182.87833830115855,
+    "Lanai_island_dist":317.89751287808747,
+    "Big_island_dist":504.72419541058974
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.49055,22.21185 ]
+    },
+    "properties": {
+    "city":"Hanalei",
+    "name":"Nourish Hanalei",
+    "rating":5,
+    "address":"5225 Hanalei Plantation Rd",
+    "zipcode":96722,
+    "category":"Juice Bars & Smoothies Salad Acai Bowls",
+    "Maui_distance":379.9711446174322,
+    "Maui_Island_dist":379.9711446174322,
+    "Maui_island_dist":379.9711446174322,
+    "oahu_island_dist":183.95601526693721,
+    "Lanai_island_dist":318.968449307336,
+    "Big_island_dist":505.72734271545966
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.4663757,21.90304438 ]
+    },
+    "properties": {
+    "city":"Koloa",
+    "name":"Leahi Health Koloa",
+    "rating":5,
+    "address":"3450 Poipu Rd",
+    "zipcode":96756,
+    "category":"Juice Bars & Smoothies Vegan Vegetarian",
+    "Maui_distance":366.4091864689258,
+    "Maui_Island_dist":366.4091864689258,
+    "Maui_island_dist":366.4091864689258,
+    "oahu_island_dist":169.88110413360008,
+    "Lanai_island_dist":303.52699889453027,
+    "Big_island_dist":486.92526534939196
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.4680429,21.8842515 ]
+    },
+    "properties": {
+    "city":"Koloa",
+    "name":"Shaka Burgers Hawaii",
+    "rating":5,
+    "address":"2815 Poipu Rd",
+    "zipcode":96756,
+    "category":"Food Trucks Burgers Asian Fusion",
+    "Maui_distance":365.9900224071727,
+    "Maui_Island_dist":365.9900224071727,
+    "Maui_island_dist":365.9900224071727,
+    "oahu_island_dist":169.51914053287325,
+    "Lanai_island_dist":302.99680105932,
+    "Big_island_dist":486.12938544783043
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8013565,21.4183992 ]
+    },
+    "properties": {
+    "city":"Kaneohe",
+    "name":"Adela’s Country Eatery",
+    "rating":5,
+    "address":"45-1151 Kamehameha Hwy",
+    "zipcode":null,
+    "category":"Hawaiian Seafood Noodles",
+    "Maui_distance":175.18607441619406,
+    "Maui_Island_dist":175.18607441619406,
+    "Maui_island_dist":175.18607441619406,
+    "oahu_island_dist":22.18603246699088,
+    "Lanai_island_dist":114.7943073970783,
+    "Big_island_dist":304.90148973383907
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.79964130000002,21.40777355 ]
+    },
+    "properties": {
+    "city":"Kaneohe",
+    "name":"Got'z Grindz",
+    "rating":5,
+    "address":"45-726 Kamehameha Hwy",
+    "zipcode":96744,
+    "category":"Japanese Hawaiian",
+    "Maui_distance":174.61697207435546,
+    "Maui_Island_dist":174.61697207435546,
+    "Maui_island_dist":174.61697207435546,
+    "oahu_island_dist":22.50534788726909,
+    "Lanai_island_dist":114.05994473650972,
+    "Big_island_dist":304.07221629424936
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.74374,21.395139999999998 ]
+    },
+    "properties": {
+    "city":"Kailua",
+    "name":"22Kailua",
+    "rating":5,
+    "address":"22 Oneawa St",
+    "zipcode":96734,
+    "category":"Coffee & Tea Breakfast & Brunch",
+    "Maui_distance":168.35141945886735,
+    "Maui_Island_dist":168.35141945886735,
+    "Maui_island_dist":168.35141945886735,
+    "oahu_island_dist":28.84198303100442,
+    "Lanai_island_dist":108.09910562961362,
+    "Big_island_dist":298.4101354381955
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -154.9483867,19.4947564 ]
+    },
+    "properties": {
+    "city":"Pahoa",
+    "name":"pho 19",
+    "rating":5,
+    "address":"15-2874 Pahoa Rd",
+    "zipcode":96778,
+    "category":"Vietnamese American (Traditional) Hawaiian",
+    "Maui_distance":202.61159766127713,
+    "Maui_Island_dist":202.61159766127713,
+    "Maui_island_dist":202.61159766127713,
+    "oahu_island_dist":392.7169009453456,
+    "Lanai_island_dist":257.84393971579635,
+    "Big_island_dist":79.88176833281834
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -154.96796,19.521639999999998 ]
+    },
+    "properties": {
+    "city":"Pāhoa",
+    "name":"Lava Leaf Burgers",
+    "rating":5,
+    "address":"15-2131 Keaau-pahoa Rd",
+    "zipcode":96778,
+    "category":"Burgers",
+    "Maui_distance":199.1963204020026,
+    "Maui_Island_dist":199.1963204020026,
+    "Maui_island_dist":199.1963204020026,
+    "oahu_island_dist":389.46718092028806,
+    "Lanai_island_dist":254.56962482309606,
+    "Big_island_dist":77.58836292690088
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -154.94912,19.49535 ]
+    },
+    "properties": {
+    "city":"Pahoa",
+    "name":"Bongo Bens",
+    "rating":5,
+    "address":"",
+    "zipcode":96778,
+    "category":"Restaurants",
+    "Maui_distance":202.51088006321442,
+    "Maui_Island_dist":202.51088006321442,
+    "Maui_island_dist":202.51088006321442,
+    "oahu_island_dist":392.61632692594964,
+    "Lanai_island_dist":257.74317906314013,
+    "Big_island_dist":79.79680423860901
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.0787003,19.716209 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"The Royal Hawaiian Cafe and Lounge",
+    "rating":5,
+    "address":"804 Kilauea Ave",
+    "zipcode":96720,
+    "category":"Hawaiian Donuts Breakfast & Brunch",
+    "Maui_distance":177.22032150753967,
+    "Maui_Island_dist":177.22032150753967,
+    "Maui_island_dist":177.22032150753967,
+    "oahu_island_dist":369.07918062563556,
+    "Lanai_island_dist":234.04329264782953,
+    "Big_island_dist":67.56034142181775
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08576399999998,19.7241193 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Pho 19",
+    "rating":5,
+    "address":"18 Furneaux Ln",
+    "zipcode":96720,
+    "category":"Vietnamese",
+    "Maui_distance":176.10996542661997,
+    "Maui_Island_dist":176.10996542661997,
+    "Maui_island_dist":176.10996542661997,
+    "oahu_island_dist":368.0076476541213,
+    "Lanai_island_dist":232.9702223897034,
+    "Big_island_dist":67.01649925330285
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.06702919999998,19.70688372 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Big Island Top Dogs",
+    "rating":5,
+    "address":"811 Laukapu St",
+    "zipcode":96720,
+    "category":"Burgers Food Stands Hot Dogs",
+    "Maui_distance":178.82042858855374,
+    "Maui_Island_dist":178.82042858855374,
+    "Maui_island_dist":178.82042858855374,
+    "oahu_island_dist":370.6683451891559,
+    "Lanai_island_dist":235.633471666071,
+    "Big_island_dist":68.58002158807726
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.06966,19.713829999999998 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"Bite The Eye",
+    "rating":5,
+    "address":"619 Manono St",
+    "zipcode":96720,
+    "category":"Food Trucks Poke Seafood",
+    "Maui_distance":178.15685866828326,
+    "Maui_Island_dist":178.15685866828326,
+    "Maui_island_dist":178.15685866828326,
+    "oahu_island_dist":370.0753180270418,
+    "Lanai_island_dist":235.03809954315196,
+    "Big_island_dist":68.46996967747522
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.879926,19.453806 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Kaaloa's Super Js Authentic Hawaiian",
+    "rating":5,
+    "address":"83-5409 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Hawaiian",
+    "Maui_distance":145.54900385797362,
+    "Maui_Island_dist":145.54900385797362,
+    "Maui_island_dist":145.54900385797362,
+    "oahu_island_dist":310.96198283756684,
+    "Lanai_island_dist":181.74238849018707,
+    "Big_island_dist":25.439695380556035
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.9230858,19.518423600000002 ]
+    },
+    "properties": {
+    "city":"Kealakekua",
+    "name":"Kona Grill House",
+    "rating":5,
+    "address":"81-951 Halekii St",
+    "zipcode":96750,
+    "category":"Seafood Poke",
+    "Maui_distance":137.7707760638181,
+    "Maui_Island_dist":137.7707760638181,
+    "Maui_island_dist":137.7707760638181,
+    "oahu_island_dist":303.04330932880487,
+    "Lanai_island_dist":173.63366785314986,
+    "Big_island_dist":28.687269395704906
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.91172340000003,19.48963228 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Shaka Tacoz",
+    "rating":5,
+    "address":"82-6167 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Mexican American (New) Caterers",
+    "Maui_distance":140.94383289861142,
+    "Maui_Island_dist":140.94383289861142,
+    "Maui_island_dist":140.94383289861142,
+    "oahu_island_dist":305.91039685352104,
+    "Lanai_island_dist":176.69191480049093,
+    "Big_island_dist":27.84551829880042
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.88028,19.441389899999997 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Menehune Coffee",
+    "rating":5,
+    "address":"84-5227 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Coffee & Tea Breakfast & Brunch American (New)",
+    "Maui_distance":146.72034268192343,
+    "Maui_Island_dist":146.72034268192343,
+    "Maui_island_dist":146.72034268192343,
+    "oahu_island_dist":311.76235752368297,
+    "Lanai_island_dist":182.69251129013853,
+    "Big_island_dist":25.949069156714327
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.90944299999998,19.48818 ]
+    },
+    "properties": {
+    "city":"Captain Cook",
+    "name":"Da Kine Coffee",
+    "rating":5,
+    "address":"82-6127 Mamalahoa Hwy",
+    "zipcode":96704,
+    "category":"Coffee & Tea Acai Bowls Breakfast & Brunch",
+    "Maui_distance":141.16604042653307,
+    "Maui_Island_dist":141.16604042653307,
+    "Maui_island_dist":141.16604042653307,
+    "oahu_island_dist":306.1982655052452,
+    "Lanai_island_dist":176.96640732483684,
+    "Big_island_dist":27.626122062880885
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.50183,20.88891 ]
+    },
+    "properties": {
+    "city":"Wailuku",
+    "name":"SixtyTwo MarcKet",
+    "rating":5,
+    "address":"62 N Market St",
+    "zipcode":96793,
+    "category":"American (New) Asian Fusion Breakfast & Brunch",
+    "Maui_distance":21.012486532158842,
+    "Maui_Island_dist":21.012486532158842,
+    "Maui_island_dist":21.012486532158842,
+    "oahu_island_dist":175.7761543619447,
+    "Lanai_island_dist":47.328546297485865,
+    "Big_island_dist":165.3006413911975
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.46056389999998,20.88790349 ]
+    },
+    "properties": {
+    "city":"Kahului",
+    "name":"Acevedo's Hawaicano Cafe",
+    "rating":5,
+    "address":"190 Alamaha St",
+    "zipcode":96732,
+    "category":"Mexican Hawaiian",
+    "Maui_distance":16.955337597123208,
+    "Maui_Island_dist":16.955337597123208,
+    "Maui_island_dist":16.955337597123208,
+    "oahu_island_dist":180.15532021799243,
+    "Lanai_island_dist":51.86507701807668,
+    "Big_island_dist":162.66379547189229
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.50337,20.889209899999997 ]
+    },
+    "properties": {
+    "city":"Wailuku",
+    "name":"Taco Style",
+    "rating":5,
+    "address":"2070 A Vineyard St",
+    "zipcode":96793,
+    "category":"Tacos",
+    "Maui_distance":21.17973980938051,
+    "Maui_Island_dist":21.17973980938051,
+    "Maui_island_dist":21.17973980938051,
+    "oahu_island_dist":175.60430856106646,
+    "Lanai_island_dist":47.16300191825608,
+    "Big_island_dist":165.42272530407647
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.50258,20.88917 ]
+    },
+    "properties": {
+    "city":"Wailuku",
+    "name":"HI Thai Food Truck",
+    "rating":5,
+    "address":"91 North Market St",
+    "zipcode":96790,
+    "category":"Thai Food Trucks",
+    "Maui_distance":21.099011700367893,
+    "Maui_Island_dist":21.099011700367893,
+    "Maui_island_dist":21.099011700367893,
+    "oahu_island_dist":175.6887183254393,
+    "Lanai_island_dist":47.24946289121196,
+    "Big_island_dist":165.36965811218118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.04444990000002,19.63780986 ]
+    },
+    "properties": {
+    "city":"Keaau",
+    "name":"Ma'ona Lunch Counter",
+    "rating":5,
+    "address":"16-203 Wiliama Pl",
+    "zipcode":96749,
+    "category":"Burgers Hawaiian",
+    "Maui_distance":185.15243737776447,
+    "Maui_Island_dist":185.15243737776447,
+    "Maui_island_dist":185.15243737776447,
+    "oahu_island_dist":376.2523851239408,
+    "Lanai_island_dist":241.26070130705074,
+    "Big_island_dist":69.72086304838238
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.0876914,19.72611966 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"La Casa Azul",
+    "rating":5,
+    "address":"69 Waianuenue Ave",
+    "zipcode":96720,
+    "category":"Mexican Food Trucks",
+    "Maui_distance":175.8168960032272,
+    "Maui_Island_dist":175.8168960032272,
+    "Maui_island_dist":175.8168960032272,
+    "oahu_island_dist":367.72296466758945,
+    "Lanai_island_dist":232.68520793118657,
+    "Big_island_dist":66.86618006836241
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.08186,19.71924 ]
+    },
+    "properties": {
+    "city":"Hilo",
+    "name":"@islandwoodfired",
+    "rating":5,
+    "address":"",
+    "zipcode":96720,
+    "category":"Food Trucks Pizza",
+    "Maui_distance":176.75540372789754,
+    "Maui_Island_dist":176.75540372789754,
+    "Maui_island_dist":176.75540372789754,
+    "oahu_island_dist":368.62441950778174,
+    "Lanai_island_dist":233.58804401092706,
+    "Big_island_dist":67.30172427123922
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.66315840000001,20.01781389 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"Red Barn",
+    "rating":5,
+    "address":"67-139 Pukalani Rd",
+    "zipcode":96743,
+    "category":"Sandwiches Food Trucks",
+    "Maui_distance":108.63479751152266,
+    "Maui_Island_dist":108.63479751152266,
+    "Maui_island_dist":108.63479751152266,
+    "oahu_island_dist":297.51254171445254,
+    "Lanai_island_dist":162.53823415667486,
+    "Big_island_dist":48.08666778706099
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.65699180000001,20.0255361 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"FOX BBQ",
+    "rating":5,
+    "address":"64-1007 Mamalahoa Hwy",
+    "zipcode":96743,
+    "category":"Barbeque",
+    "Maui_distance":108.53537839856696,
+    "Maui_Island_dist":108.53537839856696,
+    "Maui_island_dist":108.53537839856696,
+    "oahu_island_dist":297.72590194121574,
+    "Lanai_island_dist":162.73292994602375,
+    "Big_island_dist":48.87642288903313
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.6690731,20.02004007 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"Racha Thai 2",
+    "rating":5,
+    "address":"67-1185 Mamalahoa Hwy",
+    "zipcode":96743,
+    "category":"Thai",
+    "Maui_distance":108.02215117101872,
+    "Maui_Island_dist":108.02215117101872,
+    "Maui_island_dist":108.02215117101872,
+    "oahu_island_dist":296.8294903249828,
+    "Lanai_island_dist":161.85786353409017,
+    "Big_island_dist":48.3135207822335
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.10313,21.58669 ]
+    },
+    "properties": {
+    "city":"Haleiwa",
+    "name":"Maya's Tapas and Wines",
+    "rating":5,
+    "address":"66-250 Kamehameha Hwy",
+    "zipcode":96712,
+    "category":"Tapas/Small Plates Mediterranean Beer Bar",
+    "Maui_distance":212.75096185878414,
+    "Maui_Island_dist":212.75096185878414,
+    "Maui_island_dist":212.75096185878414,
+    "oahu_island_dist":19.055814615703444,
+    "Lanai_island_dist":152.46072354473043,
+    "Big_island_dist":342.0145020638128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.05997,21.6397799 ]
+    },
+    "properties": {
+    "city":"Haleiwa",
+    "name":"Toa Luau",
+    "rating":5,
+    "address":"59-864 Kamehameha Hwy",
+    "zipcode":96712,
+    "category":"Cultural Center Performing Arts Hawaiian",
+    "Maui_distance":210.48462457702985,
+    "Maui_Island_dist":210.48462457702985,
+    "Maui_island_dist":210.48462457702985,
+    "oahu_island_dist":21.744525536459857,
+    "Lanai_island_dist":151.28663851112105,
+    "Big_island_dist":341.5847920399207
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.10955880000003,21.5688617 ]
+    },
+    "properties": {
+    "city":"Waialua",
+    "name":"Poke For the People",
+    "rating":5,
+    "address":"66-935 Kaukonahua Rd",
+    "zipcode":96791,
+    "category":"Poke Sushi Bars Salad",
+    "Maui_distance":212.72824208472622,
+    "Maui_Island_dist":212.72824208472622,
+    "Maui_island_dist":212.72824208472622,
+    "oahu_island_dist":18.09405560468666,
+    "Lanai_island_dist":152.15214742404996,
+    "Big_island_dist":341.4757831105621
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.1764062,21.41120135 ]
+    },
+    "properties": {
+    "city":"Waianae",
+    "name":"Jeramiahs",
+    "rating":5,
+    "address":"",
+    "zipcode":96792,
+    "category":"Guamanian Asian Fusion Caterers",
+    "Maui_distance":214.3734904554589,
+    "Maui_Island_dist":214.3734904554589,
+    "Maui_island_dist":214.3734904554589,
+    "oahu_island_dist":19.799067259426554,
+    "Lanai_island_dist":151.53331876372425,
+    "Big_island_dist":338.08445461715485
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.2040253,21.48028946 ]
+    },
+    "properties": {
+    "city":"Waianae",
+    "name":"Sonoda's Bikini & Snow",
+    "rating":5,
+    "address":"143 At The Beach",
+    "zipcode":96792,
+    "category":"Food Trucks Shaved Ice Burgers",
+    "Maui_distance":219.46279895851688,
+    "Maui_Island_dist":219.46279895851688,
+    "Maui_island_dist":219.46279895851688,
+    "oahu_island_dist":23.059553853583434,
+    "Lanai_island_dist":157.25099876676282,
+    "Big_island_dist":344.6418589387584
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.66315840000001,20.01781389 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"Red Barn",
+    "rating":5,
+    "address":"67-139 Pukalani Rd",
+    "zipcode":96743,
+    "category":"Sandwiches Food Trucks",
+    "Maui_distance":108.63479751152266,
+    "Maui_Island_dist":108.63479751152266,
+    "Maui_island_dist":108.63479751152266,
+    "oahu_island_dist":297.51254171445254,
+    "Lanai_island_dist":162.53823415667486,
+    "Big_island_dist":48.08666778706099
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.65699180000001,20.0255361 ]
+    },
+    "properties": {
+    "city":"Waimea",
+    "name":"FOX BBQ",
+    "rating":5,
+    "address":"64-1007 Mamalahoa Hwy",
+    "zipcode":96743,
+    "category":"Barbeque",
+    "Maui_distance":108.53537839856696,
+    "Maui_Island_dist":108.53537839856696,
+    "Maui_island_dist":108.53537839856696,
+    "oahu_island_dist":297.72590194121574,
+    "Lanai_island_dist":162.73292994602375,
+    "Big_island_dist":48.87642288903313
+    }
+  }
+]
+}
