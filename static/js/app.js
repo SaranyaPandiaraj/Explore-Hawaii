@@ -13,7 +13,7 @@ function Listing_Price(neighborhood) {
 				cmin: 0, 
 				colorbar: {}, 
 				color: color_code ,
-				colorscale: 'Jet' 
+				colorscale: Col_Scale 
 			  }
     };
     
@@ -24,7 +24,8 @@ function Listing_Price(neighborhood) {
       xaxis: {title: "Listing Rent Prices ($)"}, 
       yaxis: {title: "Number of Listings"},
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)'
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
+	 
     };
   
     Plotly.newPlot('price', data, layout);
@@ -52,7 +53,7 @@ function Security_Deposit(neighborhood) {
 				cmin: 0, 
 				colorbar: {}, 
 				color: color_code ,
-				colorscale: 'Jet',
+				colorscale: Col_Scale,
 				size : 12
 			  }
     };
@@ -60,11 +61,11 @@ function Security_Deposit(neighborhood) {
     var data = [trace3];
     
     var layout = {
-      title: "Distribution of security_deposit", 
+      title: "Distribution of Security Deposit", 
       xaxis: {title: "Listing security_deposit ($)"}, 
       yaxis: {title: "Security Deposit Freq"},
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)'
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
     };
   
     Plotly.newPlot('security', data, layout);
@@ -102,7 +103,7 @@ function Top_Amenities(neighborhood) {
 		cmin: 0,  
         colorbar: {}, 
 		color: color_code ,
-		colorscale: 'Jet' 
+		colorscale: Col_Scale 
       }
  
     };
@@ -115,7 +116,7 @@ function Top_Amenities(neighborhood) {
 	  xaxis: {title: "Amenities", automargin:true}, 
       yaxis: {title: "Amenities Freq"},
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)'
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
     };
     
     Plotly.newPlot('amenities', data2, layout2);
@@ -141,19 +142,19 @@ function Property_Type(neighborhood) {
       labels: property_type_keys,
       type: "pie",
       marker: {
-        cmax: 50, 
+        cmax: 10, 
 		cmin: 0,  
         colorbar: {}, 
-		colors: color_code ,
-		colorscale: 'Jet' 
+		colors: Pie_Col ,
+		colorscale: Col_Scale 
       }
     }];
     var layout2 = {
       title: "Property Types",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)',
-	   width: 500,
-  height: 500
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
+	   width: 400,
+		height: 400
     };
     // Create pie chart
     Plotly.newPlot('property', trace3, layout2);
@@ -179,20 +180,20 @@ function Room_Type(neighborhood) {
           labels: room_type_keys,
           type: "pie",
           marker: {
-           cmax: 50, 
-		cmin: 0,  
-        colorbar: {}, 
-		colors: color_code ,
-		colorscale: 'Jet' 
+				   cmax: 50, 
+				cmin: 0,  
+				colorbar: {}, 
+				colors: Pie_Col ,
+				colorscale: Col_Scale 
           }
         }];
         
         var layout3 = {
           title: "Room Types",
 		  paper_bgcolor:'rgba(0,0,0,0)',
-		  plot_bgcolor:'rgba(0,0,0,0)',
-		   width: 500,
-			height: 500
+		  plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
+		   width: 400,
+			height: 400
         };
         // Create pie chart
         Plotly.newPlot('room', trace4, layout3);
@@ -220,17 +221,17 @@ function Bed_Type(neighborhood) {
         cmax: 50, 
 		cmin: 0,  
         colorbar: {}, 
-		colors: color_code ,
-		colorscale: 'Jet' 
+		colors: Pie_Col ,
+		colorscale: Col_Scale 
       }
     }];
     // Add chart title
     var layout5 = {
       title: "Bed Types",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)',
-	   width: 500,
-  height: 500
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
+	   width: 400,
+  height: 400
     };
     // Create pie chart
     Plotly.newPlot('bed', trace5, layout5);
@@ -288,8 +289,8 @@ console.log(accom_bath_bedroom_beds);
         cmax: 10, 
 		cmin: 0,  
        // colorbar: {}, 
-		color: "blue" ,
-		colorscale: 'Jet' 
+		color: Pie_Col ,
+		colorscale: Col_Scale 
       }
     };
 	
@@ -302,8 +303,8 @@ console.log(accom_bath_bedroom_beds);
         cmax: 10, 
 		cmin: 0,  
        // colorbar: {}, 
-		color: "red" ,
-		colorscale: 'Jet' 
+		color: Pie_Col ,
+		colorscale: Col_Scale 
       }, xaxis: 'x2',
   yaxis: 'y2',
     };
@@ -317,8 +318,8 @@ console.log(accom_bath_bedroom_beds);
         cmax: 10, 
 		cmin: 0,  
         //colorbar: {}, 
-		color: "green" ,
-		colorscale: 'Jet' 
+		color: Pie_Col ,
+		colorscale: Col_Scale 
       }, xaxis: 'x3',
   yaxis: 'y3',
     };
@@ -331,8 +332,8 @@ console.log(accom_bath_bedroom_beds);
         cmax: 10, 
 		cmin: 0,  
         //colorbar: {}, 
-		color: "orange" ,
-		colorscale: 'Jet' 
+		color: Pie_Col ,
+		colorscale: Col_Scale 
       }, xaxis: 'x4',
 		yaxis: 'y4',
     };
@@ -341,9 +342,9 @@ console.log(accom_bath_bedroom_beds);
     var layout6 = {
       title: "Accomodations Bathrooms Bedrooms Baths Distribution",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
 	  grid: {rows: 2, columns: 2, pattern: 'independent'},
-	   width: 1300,
+	   width: 1400,
 		height: 500
     };
     // Create pie chart
@@ -372,17 +373,17 @@ function Cancellation(neighborhood) {
         cmax: 50, 
 		cmin: 0,  
         colorbar: {}, 
-		colors: color_code ,
-		colorscale: 'Jet' 
+		colors: Pie_Col ,
+		colorscale: Col_Scale 
       }
     }];
     // Add chart title
     var layout10 = {
       title: "Cancellation Policy",
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)',
-	   width: 500,
-  height: 500
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
+	   width: 400,
+  height: 400
     };
     // Create pie chart
     Plotly.newPlot('cancellation', trace10, layout10);
@@ -401,7 +402,7 @@ function host_listing(neighborhood) {
 				cmin: 0, 
 				colorbar: {}, 
 				color: color_code ,
-				colorscale: 'Jet' 
+				colorscale: Col_Scale 
 			  }
     };
     
@@ -412,7 +413,7 @@ function host_listing(neighborhood) {
       xaxis: {title: "Host Airbnb Listings"}, 
       yaxis: {title: "Airbnb Listing Freq."},
 	  paper_bgcolor:'rgba(0,0,0,0)',
-      plot_bgcolor:'rgba(0,0,0,0)'
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
     };
   
     Plotly.newPlot('host_listing', data, layout11);
@@ -443,22 +444,230 @@ function reviews_rating(neighborhood) {
                 cmax: 50, 
 				cmin: 0, 
 				colorbar: {}, 
-				color: color_code ,
-				colorscale: 'Jet' 
+				colors:  color_code,
+				colorscale: Col_Scale 
         },
-      
-        type: 'box'
+        type: 'box',
+		colorway: {
+        valType: Col_Scale,
+        role: 'style',
+        editType: 'calc'}
       }
     ];
     // Add title and x label
     layout = {
       title: "Distribution of Ratings",
-      xaxis: {title: "Overall Rating (Scale of 0 to 100)"}
+      xaxis: {title: "Overall Rating (Scale of 0 to 100)"},
+	  paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
     }
     //  Create the box plot
     Plotly.newPlot('Reviews', data, layout);
   });
 }
+
+function host_visual_pie(neighborhood) {
+  
+  var host_visual_pie_Url = `/host_visual/${neighborhood}`;
+
+  d3.json(host_visual_pie_Url).then(function(host_visual) {
+ 
+
+    var host_is_superhost_keys = [];
+    var host_is_superhost_values = [];
+    
+    for (var k in host_visual[0]) {
+      host_is_superhost_keys.push(k);
+      host_is_superhost_values.push(host_visual[0][k])};
+	  
+
+	var host_identity_verified_keys = [];
+    var host_identity_verified_values = [];
+    
+    for (var k in host_visual[1]) {
+      host_identity_verified_keys.push(k);
+      host_identity_verified_values.push(host_visual[1][k])}; 
+ 
+ 
+    var trace13 = {
+      values: host_is_superhost_values,
+      labels: ["Host is Not Superhost","Host Is Superhost"],
+      type: "pie",
+	  name: "Host is SuperHost",
+	  hole: .3,
+	  domain: {column: 0},
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+       // colorbar: {}, 
+		color: color_code ,
+		colorscale: Col_Scale 
+      }
+    };
+	
+	var trace14 = {
+      values: host_identity_verified_values,
+      labels: ["Host Identity Not Verified","Host Identity Verified"],
+      type: "pie",
+	  name: "Host Identity Verified",
+	  hole: .3,
+	  domain: {column: 1},
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+       // colorbar: {}, 
+		color: color_code ,
+		colorscale: Col_Scale 
+      }
+    };
+	
+	var data = [trace13,trace14];
+    var layout12 = {
+      title: "Host Is Superhost & Host Identity Verified",
+	  paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
+	  //showlegend: false,
+	  grid: {rows: 1, columns: 2,  pattern: 'independent' },
+	   width: 1400,
+		height: 500
+    };
+    // Create pie chart
+    Plotly.newPlot('host_visual_pie', data, layout12);
+  });
+}
+function host_visual(neighborhood) {
+  
+  var host_visual_Url = `/host_visual/${neighborhood}`;
+
+  d3.json(host_visual_Url).then(function(host_visual) {
+ 
+
+
+	  
+	var host_response_time_keys = [];
+    var host_response_time_values = [];
+    
+    for (var k in host_visual[2]) {
+      host_response_time_keys.push(k);
+      host_response_time_values.push(host_visual[2][k])};
+	 
+
+	var host_response_rate_keys = [];
+    var host_response_rate_values = [];
+    
+    for (var k in host_visual[3]) {
+      host_response_rate_keys.push(k);
+      host_response_rate_values.push(host_visual[3][k])};  
+ 
+
+	
+	var trace15 = {
+      y: host_response_time_values,
+      x: host_response_time_keys,
+      type: "bar",
+	  name: "Host Response Time",
+
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+        //colorbar: {}, 
+		color: color_code ,
+		colorscale: Col_Scale 
+      }
+    };
+	var trace16 = {
+      y: host_response_rate_values,
+      x: host_response_rate_keys,
+      type: "scatter",
+	  mode: 'lines+markers',
+	  name: "Host Response Rate",
+      marker: {
+        cmax: 10, 
+		cmin: 0,  
+        size : 12, 
+		color: color_code ,
+		colorscale: Col_Scale 
+      }, xaxis: 'x2',
+		yaxis: 'y2',
+    };
+	
+	var data = [trace15,trace16];
+    var layout13 = {
+      title: "Host Response Rate & Time",
+	  paper_bgcolor:'rgba(0,0,0,0)',
+      plot_bgcolor:'rgba(0,0,0,0)', titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
+	  grid: {rows: 1, columns: 2, pattern: 'independent'},
+	   width: 1400,
+		height: 500
+    };
+    // Create pie chart
+    Plotly.newPlot('host_visual', data, layout13);
+  });
+}
+
+function reviews_comments(neighborhood) {
+  
+  var reviews_comments_url = `/reviews_comments/${neighborhood}`;
+ 
+  d3.json(reviews_comments_url).then(function(reviews_data) {
+	  var wordcloudstring = "";
+    
+    wordcloudstring = reviews_data.join(" ");
+    var myConfig = {
+   
+      type: 'wordcloud',
+      options: {
+        
+        text: wordcloudstring,
+        
+        minLength: 5,
+        // Ignore irrelevant words
+        ignore: ["Hawaii","there","would","which","really","host","place","house","could","didn't","definitely","accommodating","about","first","needed","bathroom","bedroom","There","around","great","apartment","kitchen","condo","house","everything","Place","Great","great","during","helpful","downtown","questions","location","located","space","within","visit","their","little","Waikki","Waikiki","Hill","neighborhood","Thanks","Thank","thanks","thank","clean","right","left","recommend","before","after","wonderful","again","hosts","amazing","beautiful","again","airport","arrived","check","other","super","stayed","Needle","excellent","The","arrival","Would","things","perfect","loved","described","exactly","Space","available","Everything","awesome","fantastic","welcome","enough","responsive","absolutely","experience","highly","minute","anyone","studio","extremely","because","while","staying","Carol","Airbnb","better","being","The","every","comfortable","close","though","where","wanted","early","itself","communication","looking","instructions","distance","information","airbnb","short","light","night","lovely","enjoyed"],
+        
+        maxItems: 50,
+      
+        aspect: 'flow-center',
+       
+        rotate: true,
+       
+        colorType: 'palette',
+        
+        palette: 'Pie_Col',
+        
+        style: {
+          fontFamily: 'Crete Round',
+       
+          hoverState: {
+	
+            backgroundColor: Col_Scale,
+            borderRadius: 2,
+            fontColor: 'white'
+          },
+         
+          tooltip: {
+            text: '%text: %hits',
+            visible: true,
+            alpha: 0.9,
+            backgroundColor: "black",
+            borderRadius: 2,
+            borderColor: 'none',
+            fontColor: 'white',
+            fontFamily: 'Georgia',
+            textAlpha: 1
+          }
+        }
+      },
+    };
+ 
+    zingchart.render({ 
+   
+      id: 'comment', 
+      data: myConfig,
+      width: '100%' 
+    });
+  });
+}
+
 
 function init() {
   
@@ -482,7 +691,10 @@ function init() {
 	 Cancellation(Initial_Neighborhood_Value);
 	 accom_bath_bedroom_beds(Initial_Neighborhood_Value);
 	 host_listing(Initial_Neighborhood_Value);
-	 reviews_rating(Initial_Neighborhood_Value);
+	 host_visual_pie(Initial_Neighborhood_Value);
+	 host_visual(Initial_Neighborhood_Value);
+	 neighborhood=Initial_Neighborhood_Value;
+     set_color();
   });
 }
 
@@ -495,7 +707,41 @@ function optionChanged(OnClick_Value) {
 	 Bed_Type(OnClick_Value);
 	 Cancellation(OnClick_Value);
 	 accom_bath_bedroom_beds(OnClick_Value);
-	 host_listing(OnClick_Value);
-	 reviews_rating(OnClick_Value);
-}	 
+	 host_listing(OnClick_Value); 
+	 host_visual_pie(OnClick_Value);
+	 host_visual(OnClick_Value);
+     neighborhood=OnClick_Value;
+     set_color();
+	 
+}
+
+function Reviews(OnClick_Value) {
+	reviews_rating(OnClick_Value);
+	reviews_comments(OnClick_Value);
+	set_color();
+}
+
+function set_color() {
+  if (neighborhood == "Honolulu") {
+    Col_Scale = "Rainbow";
+    Pie_Col = ['#3D2B56','#A26769', '#D5B9B2', '#ECE2D0', '#CEBEBE', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    bg_color ="#dcd2e9";
+  }
+  else if (neighborhood == "Hawaii") {
+    Col_Scale = "Bluered";
+    Pie_Col = ['#F26419','#FFB800', '#2F4858', '#86BBD8', '#33658A', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    bg_color = "#fce0d1";
+  }
+  else if (neighborhood == "Kauai") {
+    Col_Scale = "Viridis";
+    Pie_Col = ['#6B8F71','#9DBF9E', '#D0D6B5', '#F9B5AC', '#EE7674', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    bg_color = "#dae4da";
+  }
+  else if (neighborhood == "Maui") {
+   Col_Scale = "Cividis";
+    Pie_Col = ['#6F1A07','#C32F27', '#D8572A', '#DB7C26', '#F7B538', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    bg_color = "#fac2b5";
+  }
+}
+	 
 init();

@@ -10,6 +10,7 @@ from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
+from flask import send_file
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -18,7 +19,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/FuturisticAirbnb.sqlite"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/Futuristic_Airbnb.sqlite"
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -27,7 +28,7 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Define the engine
-engine = create_engine("sqlite:///database/FuturisticAirbnb.sqlite", encoding='utf8')
+engine = create_engine("sqlite:///database/Futuristic_Airbnb.sqlite", encoding='utf8')
 conn = engine.connect()
 session = Session(engine)
 
@@ -64,6 +65,10 @@ def more():
 @app.route("/Airbnb")   
 def Airbnb():   
     return render_template("Airbnb.html")
+	
+@app.route("/Airbnb_Map")   
+def Airbnb_Map():   
+    return render_template("Airbnb_Map.html")
 
 @app.route("/neighborhoods")
 def neighborhoods():
@@ -182,7 +187,7 @@ def accom_bath_bedroom_beds(neighborhood):
 @app.route("/host_listing/<neighborhood>")
 def host_listing(neighborhood):
   
-    host_listing_data = pd.read_sql("SELECT ah.host_listings_count, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Hosts ah INNER JOIN Futuristic_Airbnb_Listings_Property lp ON ah.host_id = lp.host_id INNER JOIN Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id WHERE ah.host_listings_count<34",engine)
+    host_listing_data = pd.read_sql("SELECT ah.host_listings_count, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Hosts ah INNER JOIN Futuristic_Airbnb_Listings_Property lp ON ah.host_id = lp.host_id INNER JOIN Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id WHERE ah.host_listings_count<30 and ah.host_listings_count <> 0",engine)
     
     host_listing_grouped = host_listing_data.loc[(host_listing_data["neighbourhood_group_cleansed"] == neighborhood),:]
    
@@ -191,7 +196,7 @@ def host_listing(neighborhood):
 @app.route("/host_visual/<neighborhood>")
 def host_visual(neighborhood):
   
-    host_visual_data = pd.read_sql("SELECT ah.host_is_superhost , ah.host_identity_verified, ah.host_response_time ,ah.host_response_rate, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Hosts ah INNER JOIN Futuristic_Airbnb_Listings_Property lp ON ah.host_id = lp.host_id INNER JOIN Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id WHERE ah.host_listings_count<34",engine)
+    host_visual_data = pd.read_sql("SELECT ah.host_is_superhost , ah.host_identity_verified, ah.host_response_time ,ah.host_response_rate, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Hosts ah INNER JOIN Futuristic_Airbnb_Listings_Property lp ON ah.host_id = lp.host_id INNER JOIN Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id WHERE ah.host_response_time not in ('Information Not Available')",engine)
     
     host_visual_grouped = host_visual_data.loc[(host_visual_data["neighbourhood_group_cleansed"] == neighborhood),:]
    

@@ -1,5 +1,24 @@
 
+.jumbotron {
+	
+background-image:url("/static/images/airbnb.jpg");
+background-position: center; /* Center the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+font-family: "Comic Sans MS", "Comic Sans", cursive;
 
+}
+
+#list, #host, #review {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-align:center;
+	background-color: #00BFFF;
+	color: white;
+	
+
+}
+
+h2 { font-family: "Comic Sans MS", "Comic Sans", cursive;
+text-align:center; } 
 
 .container {background-color: #ffff;}
 
@@ -9,7 +28,51 @@ table {
   text-align:center;
  
 }
+
+
 td {
   width: 25% ;
 }
 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00BFFF;
+  border: none;
+  color: white;
+  font-weight:bold;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color:white;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
