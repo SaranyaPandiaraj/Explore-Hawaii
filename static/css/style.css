@@ -1,7 +1,7 @@
 
 .jumbotron {
 	
-background-image:url("/static/images/airbnb.jpg");
+background-image:url("/static/images/airbnb.png");
 background-position: center; /* Center the image */
 background-size: cover; /* Resize the background image to cover the entire container */
 font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -11,7 +11,7 @@ font-family: "Comic Sans MS", "Comic Sans", cursive;
 #list, #host, #review {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	text-align:center;
-	background-color: #00BFFF;
+	background-color: grey;
 	color: white;
 	
 

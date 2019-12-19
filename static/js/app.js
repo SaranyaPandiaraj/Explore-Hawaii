@@ -500,7 +500,7 @@ function host_visual_pie(neighborhood) {
         cmax: 10, 
 		cmin: 0,  
        // colorbar: {}, 
-		color: color_code ,
+		colors: Pie_Col ,
 		colorscale: Col_Scale 
       }
     };
@@ -516,7 +516,7 @@ function host_visual_pie(neighborhood) {
         cmax: 10, 
 		cmin: 0,  
        // colorbar: {}, 
-		color: color_code ,
+		colors: Pie_Col ,
 		colorscale: Col_Scale 
       }
     };
@@ -632,7 +632,7 @@ function reviews_comments(neighborhood) {
        
         colorType: 'palette',
         
-        palette: 'Pie_Col',
+        palette: Pie_Col,
         
         style: {
           fontFamily: 'Crete Round',
@@ -640,7 +640,7 @@ function reviews_comments(neighborhood) {
           hoverState: {
 	
             backgroundColor: Col_Scale,
-            borderRadius: 2,
+            borderRadius: 3,
             fontColor: 'white'
           },
          
@@ -649,7 +649,7 @@ function reviews_comments(neighborhood) {
             visible: true,
             alpha: 0.9,
             backgroundColor: "black",
-            borderRadius: 2,
+            borderRadius: 3,
             borderColor: 'none',
             fontColor: 'white',
             fontFamily: 'Georgia',
@@ -723,23 +723,23 @@ function Reviews(OnClick_Value) {
 
 function set_color() {
   if (neighborhood == "Honolulu") {
-    Col_Scale = "Rainbow";
-    Pie_Col = ['#3D2B56','#A26769', '#D5B9B2', '#ECE2D0', '#CEBEBE', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    Col_Scale = "YIGnBu";
+    Pie_Col = ['#191970','#00008B', '#008080', '#00FA9A', '#228B22', '#32CD32','#ee82ee','#ADFF2F','#9ACD32','#FFFF00'];
     bg_color ="#dcd2e9";
   }
   else if (neighborhood == "Hawaii") {
     Col_Scale = "Bluered";
-    Pie_Col = ['#F26419','#FFB800', '#2F4858', '#86BBD8', '#33658A', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    Pie_Col = ['#8B0000','#191970', '#B22222', '#00008B', '#CD5C5C', '#4169E1','#E9967A','#1E90FF','#FA8072','#00BFFF'];
     bg_color = "#fce0d1";
   }
   else if (neighborhood == "Kauai") {
     Col_Scale = "Viridis";
-    Pie_Col = ['#6B8F71','#9DBF9E', '#D0D6B5', '#F9B5AC', '#EE7674', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+    Pie_Col = ['#191970','#000080', '#00008B', '#0000CD', '#9ACD32', '#ADFF2F','#32CD32','#7FFF00','#FFFF00','#F0E68C'];
     bg_color = "#dae4da";
   }
   else if (neighborhood == "Maui") {
-   Col_Scale = "Cividis";
-    Pie_Col = ['#6F1A07','#C32F27', '#D8572A', '#DB7C26', '#F7B538', 'rgb(102, 102, 102)','rgb(76, 76, 76)','rgb(153, 153, 153)','rgb(204, 204, 204)','rgb(229, 229, 229)'];
+   Col_Scale = "Hot";
+    Pie_Col = ['#8B0000','#FF0000', '#B22222', '#DC143C', '#FF8C00', '#FFA500','#FF4500','#FF6347','#FFFF00','#FFFAFA'];
     bg_color = "#fac2b5";
   }
 }
