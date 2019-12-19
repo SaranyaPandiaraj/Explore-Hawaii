@@ -13,6 +13,9 @@ def index():
 @app.route("/tourismYearly")
 def tourismyearly():
     return render_template("tourismYearly.html")
+@app.route("/visitorStatistics")
+def visitorStatistics():
+    return render_template("VisitorStatistics.html")
 
 @app.route("/stateWide")
 def stateWide():

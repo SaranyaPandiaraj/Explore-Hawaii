@@ -10,7 +10,7 @@ function init() {
       width: 500
     };
   
-    Plotly.plot("pie", data, layout);
+    Plotly.plot("market_pie", data, layout);
   }
   
   function updatePlotly(newdata) {
