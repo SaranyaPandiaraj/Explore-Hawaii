@@ -96,10 +96,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-a, a:visited {
-    color: white;
-    text-decoration: none;
-}
+
 
 .button span {
   cursor: pointer;

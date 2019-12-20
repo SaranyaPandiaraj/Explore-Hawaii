@@ -66,8 +66,8 @@ def more():
 def Airbnb():   
     return render_template("Airbnb.html")
 	
-@app.route("/Airbnb_Map")   
-def Airbnb_Map():   
+@app.route("/Airbnb_Maps")   
+def Airbnb_Maps():   
     return render_template("Airbnb_Map.html")
 
 @app.route("/neighborhoods")
