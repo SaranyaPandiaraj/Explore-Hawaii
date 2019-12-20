@@ -17,10 +17,22 @@ color:white;
 
 }
 
-h2 { font-family: "Comic Sans MS", "Comic Sans", cursive;
+footer{
+	background-image:url("/static/images/Hawaii_Map.gif");
+background-position: center; /* Center the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+h1,h3,h2 { font-family: "Comic Sans MS", "Comic Sans", cursive;
 text-align:center; } 
 
+p { font-family: "Comic Sans MS", "Comic Sans", cursive; 
+ }
+
+.page-collection {font-size:17px;}
+
 .container {background-color: #ffff;}
+
+.text  {color: white;}
 
 table {
   table-layout: fixed ;

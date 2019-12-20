@@ -227,7 +227,28 @@ def reviews_comments(neighborhood):
    
     review_comments = reviews_comments_data_group["comments"].tolist()
     
-    return jsonify(review_comments)    
+    return jsonify(review_comments)  
+
+#Tourism Routes
+
+@app.route("/Tourism")
+def Tourism():
+    """Return the homepage."""
+    return render_template("Tourism_Statistics.html")
+
+
+@app.route("/TourismYearly")
+def tourismyearly():
+    return render_template("TourismYearly.html")
+	
+@app.route("/visitorStatistics")
+
+def visitorStatistics():
+    return render_template("VisitorStatistics.html")
+	
+@app.route("/Tourismislandstats")
+def tourismislandstats():
+    return render_template("Tourismisland_stats.html")
     
 if __name__ == "__main__":
     app.run()
