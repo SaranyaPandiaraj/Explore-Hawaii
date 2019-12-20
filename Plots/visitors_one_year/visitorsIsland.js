@@ -5,14 +5,15 @@ var Kauai_data=[]
 var Hawaii_data=[]
 var Others_data=[]
 var summa=[];
-var isl=["MAUI and MAUI CTY", "O'AHU", "KAUA'I", "HAWAI'I ISLAND","Others"]
-d3.csv('VisitorsNew.csv', function (err, data) {
+var isl=["MAUI", "O'AHU", "KAUA'I", "HAWAI'I ISLAND","Others"]
+Plotly.d3.csv('VisitorsNew.csv', function (err, data) {
+  console.log(data.length);
   data.forEach(function(i) {
     i.Totalamount= +i.Totalamount
   })
   for (var j = 0; j < data.length; j++) {
-    if (data[j].year=="2016") {
-      if ((data[j].island=="MAUI") || (data[j].island=="MAUI CTY")) {
+    if (data[j].year=="2018") {
+      if ((data[j].island=="MAUI")) {
         Maui_data.push(data[j].Totalamount)
       }
       else if (data[j].island=="O'AHU") {
