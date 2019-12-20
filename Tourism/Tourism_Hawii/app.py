@@ -4,11 +4,15 @@ import numpy as np
 from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
+# @app.route("/")
+# def index():
+#     """Return the homepage."""
+#     return render_template("index.html")
+
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("index.html")
-
+    return render_template("haha.html")
 
 @app.route("/tourismYearly")
 def tourismyearly():

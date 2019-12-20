@@ -96,30 +96,109 @@
   <div class="row">
     <div class="col-md-12 col-lg-12 ">
       <h3>Tourism DashBoard By Island</h3> 
-        <div class="btn-group-lg">
-            <button type="button" onClick="window.location.href='/'" >Home</button>
-            <button type="button" onClick="window.location.href='/tourismYearly'" >Yearly Statistics</button>
-            <button type="button" onClick="window.location='/visitorStatistics'" >visitors Statistics</button>
-            <!-- <button type="button" onClick="window.location='/VisitorStatistics'">Visitor Statistics</button> -->
-            <button type="button" onClick="window.location.href='/tourismislandstats'">Island Statistics</button>
-            <!-- <button type="button" onClick="window.location.href='/tourismHawiiIsland'">Maps</button>      -->
+            <!-- <a class="button" href="/"><span>Home </span></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="button" href="#yearly"><span>Yearly Statistics </span></a>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <a class="button" href="#visitor"><span>visitors Statistics </span></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+	        <a class="button" href="#island"><span>Island Statistics </span></a>
+    </div>
+  </div> -->
+  <div class="btn-group-lg">
+        <button type="button" onClick="window.location.href='/'" >Home</button>
+        <button type="button" onClick="window.location.href='#yearly'" >Yearly Statistics</button>
+        <button type="button" onClick="window.location='#visitor'" >visitors Statistics</button>
+        <button type="button" onClick="window.location.href='#island'">Island Statistics</button>
+        
+    </div>        
+      
+  <h2>Tourism statistics:</h2>
+    <div class="row">
+        <div class="column">
+            <div class="col-md-12 ">
+                <div id="chart"></div>
+            </div>
         </div>
     </div>
-  </div>        
-      
 
-  <div class="row">
-    <div class="col-md-12 col-lg-12">
-      <h3>Tourism statistics:</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <div class="col-md-12 ">
-        <div id="chart"></div>
-  </div>
-</div>
-  
+    <h2 id="yearly">Yearly statistics:</h2>
+    <div class="row">
+            <div class="col-md-12 align=center">
+              <h4>Select Year</h24>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+        </div>
+    <div class="row">
+        <div class="btn-group-lg">
+            <button type="button" onClick="window.location.href='/'" >Home</button>
+            <button type="button" onClick="window.location.href='#yearly'" >Yearly Statistics</button>
+            <button type="button" onClick="window.location='#visitor'" >visitors Statistics</button>
+            <button type="button" onClick="window.location.href='#island'">Island Statistics</button>
+        </div>  
+    </div> 
+   
+     <div class="row">
+            <div class="col-md-6">
+              <!-- yearly visitor -->
+               <div id="pie"></div>
+            </div>
+            <div class="col-md-6">
+               <!--Market Compostion plot  -->
+                <div id="los_plot"></div>
+             </div>
+         </div>
+         <h2 id="visitor">Visitor statistics:</h2>
+         <div class="row">
+                <div class="col-md-12">
+                  <h3>Yearly-Tourism statistics</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 align=center">
+                  <h4>Select Year</h24>
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                </div>
+            </div>
+                <!-- </div>
+            </div> -->
+               <!-- second row of graphs -->
+            <div class="row">
+               <div class="col-md-6">
+                 <!-- yearly visitor -->
+                  <div id="pie"></div>
+               </div>
+               <div class="col-md-6">
+                  <!--Market Compostion plot  -->
+                   <div id="los_plot"></div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-md-4">
+                  
+                   <div id="bubble"></div>
+                </div> -->
+            
+            </div> 
+        <h2 id="island">island statistics:</h2>
+        <div class="row">
+                <div class="column">
+                 <div class="col-md-12">
+                    <div id="bars"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="impres_bars"></div> 
+                </div>
+                <div class="col-md-6">
+                  <div id="line"></div>
+                </div>
+              </div>
+        
+        
+
   <!-- <div class="row">
       <div class="col-md-6">
         <div id="exp_bars"></div>
