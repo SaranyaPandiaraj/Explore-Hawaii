@@ -14,7 +14,7 @@ var Features_Info = L.geoJSON(airbnb_data,{
 					},
 					pointToLayer:function(Data,latlng){
 						return new L.circle(latlng,{
-							radius: Data.properties.calculated_host_listings_count * 10,
+							radius: Data.properties.calculated_host_listings_count * 20,
 							fillColor: Colour(Data.properties.calculated_host_listings_count),
 							fillOpacity:.7,
 							stroke:false,
@@ -24,7 +24,7 @@ var Features_Info = L.geoJSON(airbnb_data,{
 
 var lightmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"http://mapbox.com\">Mapbox</a>",
-  maxZoom: 18,
+  maxZoom: 20,
   id: "mapbox.light",
   accessToken: API_KEY
 });
@@ -51,13 +51,13 @@ var baseMaps = {
 var Rest_Cafe = new L.LayerGroup();
 
 var overlayMaps ={
-	"Airbnb Listings": Features_Info,
+	"Popular Airbnb Listings": Features_Info,
 	"Popular Rest/Cafe": Rest_Cafe
 };
 
 var map = L.map("map", {
-	center: [21.1933, -156.0239],
-	zoom: 7.5,
+	center: [20.9933, -156.33],
+	zoom: 8,
 	layers: [outdoors, Features_Info, Rest_Cafe]
 }); 
 
@@ -74,6 +74,8 @@ d3.json("/static/geojson/Rest_Cafe.geojson", function(Rest_Cafe_Data) {
 	})
 	.addTo(Rest_Cafe);
 });
+
+
 
 L.control.layers(baseMaps, overlayMaps, {
 collapsed: false
