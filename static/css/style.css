@@ -11,24 +11,43 @@ color:white;
 #list, #host, #review {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	text-align:center;
-	background-color: grey;
+	background-image:url("/static/images/airbnb.png");
+background-position: center; /* Center the image */
+background-repeat: no-repeat;
+background-size: cover;
 	color: white;
 	
 
 }
 
+.text-align-center {background-image:url("/static/images/hawaii_1.jpg");
+background-position: bottom;background-repeat: no-repeat;
+color:white;}
+
+.mainp {font-size:25px;
+   font-weight:normal; }
+
 footer{
-	background-image:url("/static/images/Hawaii_Map.gif");
-background-position: center; /* Center the image */
-background-size: cover; /* Resize the background image to cover the entire container */
+	background-image:url("/static/images/Table.gif"),url("/static/images/Table.gif");
+background-position: left, right; /* Center the image */
+background-size: 170px ;
+background-repeat: no-repeat, no-repeat;
+
 }
+
+header {
+	background-image:url("/static/images/Table.gif"),url("/static/images/Table.gif");
+background-position: left, right; /* Center the image */
+background-size: 170px ;
+background-repeat: no-repeat, no-repeat;}
+	
 h1,h3,h2 { font-family: "Comic Sans MS", "Comic Sans", cursive;
 text-align:center; } 
 
 p { font-family: "Comic Sans MS", "Comic Sans", cursive; 
  }
 
-.page-collection {font-size:17px;}
+.page-collection {font-size:19px;}
 
 .container {background-color: #ffff;}
 
@@ -38,7 +57,17 @@ table {
   table-layout: fixed ;
   width: 100% ;
   text-align:center;
- 
+  background-image:url("/static/images/Table1.gif");
+  /* Center the image */
+  
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+.footer-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0px 0px;
 }
 
 
@@ -56,11 +85,20 @@ td {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 350px;
+  width: 300px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-image:url("/static/images/airbnb.png");
+background-position: center; /* Center the image */
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 .button span {
@@ -110,6 +148,7 @@ td {
 	background-color: #fff;
     text-align: center;
 	  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+	
 }
 .select-css::-ms-expand {
 	display: none;
