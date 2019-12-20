@@ -350,7 +350,7 @@ Plotly.d3.csv("/static/js/islandImpres.csv", function(data) {
     ],
     {
       barmode: "stack",
-      title: "Overall island experience by visitors from the USWest,USEast and Japan",
+      title: "USWest,USEast and Japan Visitors-Experience",
       xaxis: {
         domain: [0, 0.14],
         anchor: 'x1', title: 'Oahu'

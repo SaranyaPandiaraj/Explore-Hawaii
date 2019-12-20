@@ -1,4 +1,5 @@
 function yearlyVisitors(sample) {
+     
     var Maui_data=[];
     var Oahu_data=[]
     var Kauai_data=[]
@@ -58,8 +59,11 @@ function yearlyVisitors(sample) {
   var layout = {
     title: "Visitors Arrival Yearly",
     height: 400,
-    width: 500
-  };  
-  Plotly.plot("pie", data, layout);
+    width: 400
+  };
+  
+  // var PANEL = d3.select("#pie");
+  // pie.html("");  
+  Plotly.newPlot("pie", data, layout);
     });
 }

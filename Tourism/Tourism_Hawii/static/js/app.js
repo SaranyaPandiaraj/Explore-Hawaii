@@ -30,8 +30,9 @@ function init(){
       console.log(firstYear)
       
       yearlyVisitors(firstYear);
-      //marketComposition(firstYear)
-      crimeplot();
+      
+      lengthstayplot(firstYear);
+      marketComposition(firstYear);
       
   });
       
@@ -39,8 +40,9 @@ function init(){
 function optionChanged(newSample) {
   // Fetch new data each time a new sample is selected
   yearlyVisitors(newSample);
-  //marketComposition(sample)
-  crimeplot();
+  lengthstayplot(newSample);
+  marketComposition(newSample);
+  
 }
 init();
     

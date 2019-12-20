@@ -1,19 +1,20 @@
 function marketComposition(sample){
-  var data_US_West=[];
-  var data_US_East=[];
-  var data_Japan=[];
-  var data_canada=[];
-  var data_Europe=[];
-  var data_Oceania=[];
-  var data_Other_Asia=[];
-  var data_Other=[];
+  var data_USWEST=[];
+  var data_USEAST=[];
+  var data_JAPAN=[];
+  var data_CANADA=[];
+  var data_EUROPE=[];
+  var data_OCEANIA=[];
+  var data_OtherASIA=[];
+  var data_OTHER=[];
   var origin=["US-West", "US-East", "Japan", "Canada", "Europe","Oceania","Other Asia","Other"];
-  Plotly.d3.csv('/static/js/market.csv', function (err, data) {
+  Plotly.d3.csv('/static/js/market.csv',function (err, data) {
     //if (error) return console.warn(error);
 
-    data.forEach(function(samp) {
-    samp.Totalamount= +samp.Totalamount;
-    });
+    // data.forEach(function(samp) {
+    // samp.visitors= +samp.visitors;
+    // console.log(samp.visitors)
+    // });
     sample = +sample;
     function selectYear(person) {
         return person.year=="sample";
@@ -21,45 +22,57 @@ function marketComposition(sample){
       data.filter(selectYear);
       for (var j = 0; j < data.length; j++) {
         if (data[j].year==sample) {
-            if (data[j].place=="US-West"){
-                data_US_West.push(data[j].visitorts)
+            if (data[j].place=="USWEST"){
+                data_USWEST.push(data[j].visitorts);
+                //console.log(data_US_West);
             }
-            else if (data[j].place=="US-East") {
-              data_US_East.push(data[j].visitors)
+            else if (data[j].place=="USEAST") {
+              data_USEAST.push(data[j].visitors)
             }
-            else if (data[j].place=="Japan") {
-              data_Japan.push(data[j].visitors)
+            else if (data[j].place=="JAPAN") {
+              data_JAPAN.push(data[j].visitors);
             }
-            else if (data[j].place=="Canada") {
-               data_canadas.push(data[j].visitors)
+            else if (data[j].place=="CANADA") {
+               data_CANADA.push(data[j].visitors);
             }  
-            else if (data[j].place=="Europe") {
-              data_Europe.push(data[j].visitors)
+            else if (data[j].place=="EUROPE") {
+              data_EUROPE.push(data[j].visitors);
            }  
-           else if (data[j].place=="Oceania") {
-            data_Oceania.push(data[j].visitors)
+           else if (data[j].place=="OCEANIA") {
+            data_OCEANIA.push(data[j].visitors);
            }
-           else if (data[j].place=="Other Asia") {
-              data_Other_Asia.push(data[j].visitors)
+           else if (data[j].place=="OtherASIA") {
+              data_OtherASIA.push(data[j].visitors);
            }
-           else if (data[j].place=="Other") {
-            data_Other.push(data[j].visitors)
-         }
-            
+           else if (data[j].place=="OTHER") {
+            data_OTHER.push(data[j].visitors);
+           }
+      
+           
 
           
         var su=[];
-        su.push(data_US_West);
-        su.push(data_US_East);
-        su.push(data_Japan);
-        su.push(data_canada); 
-        }
-      } 
+        su.push(sum(data_USWEST));
+        su.push((sumdata_USEAST));
+        su.push(sum(data_JAPAN));
+        su.push((sumdata_CANADA)); 
+        su.push(sum(data_OCEANIA));
+        su.push(sum(data_OtherASIA));
+        su.push(sum(data_OTHER));
+        console.log("=====",su)
+      }
+      }
+      function sum(listt) {
+        var total=0;
+        listt.forEach(x => total +=x)
+        return total
+      }
+    
        
   
   var data = [{
       values: su,
-      labels: ["US-West", "US-East", "Japan", "Canada", "Europe","Oceania","Other Asia","Latin America","Other"],
+      labels: ["US-West", "US-East", "Japan", "Canada", "Europe","Oceania","Other Asia","Other"],
       type: "pie"
     }];
 
@@ -68,6 +81,6 @@ function marketComposition(sample){
     width: 500
   };
 
-  Plotly.plot("bubble", data, layout);
+  Plotly.newPlot("bubble", data, layout);
   });
 }

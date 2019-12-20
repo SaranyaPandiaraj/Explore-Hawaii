@@ -67,6 +67,7 @@ Plotly.d3.csv('/static/js/VisitorsNew.csv', function (err, data) {
       });
     }
     var layout = {
+      width:1000,
       yaxis: {
         title: 'Number of visiters'
       },
@@ -111,7 +112,7 @@ Plotly.d3.csv('/static/js/VisitorsNew.csv', function (err, data) {
       }]
     };
     // Create the plot:
-    Plotly.plot('chart', {
+    Plotly.newPlot('chart', {
       data: traces,
       layout: layout,
       frames: frames,

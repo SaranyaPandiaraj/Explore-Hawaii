@@ -86,44 +86,50 @@
   </header>
   <br/><br/><br/><br/><br/><br/><br/><br/>
   <div class="container">
+      <div class="row">
+          <div class="col-md-12 col-lg-12 ">
+              <div class="btn-group-lg">
+                  <button type="button" onClick="window.location.href='/'">Home</button>
+                  <button type="button" onClick="window.location.href='/tourismYearly'">Yearly Statistics</button>
+                  <button type="button" onClick="window.location='/visitorStatistics'">visitors Statistics</button>
+                  <!-- <button type="button" onClick="window.location='/VisitorStatistics'">Visitor Statistics</button> -->
+                  <button type="button" onClick="window.location.href='/tourismislandstats'">Island Statistics</button>
+                  <!-- <button type="button" onClick="window.location.href='/tourismHawiiIsland'">Maps</button>      -->
+              </div>
+          </div>
+        </div>      
     <!-- first row -->
     <div class="row">
-        <div class="col-md-12  jumbotron text-center">
-          <h2>Maui Island</h2>
-          <div class="col-md-12 ">
-            <h2>Select Date to View the Tourism statistics</h2>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          </div>
+        <div class="col-md-12 ">
+          <h3>Island Statistics</h3>
         </div>
     </div>
        <!-- second row of graphs -->
     <div class="row">
-       <div class="col-md-5">
-         <!--Market Compostion plot  -->
-          <div id="pie"></div>
-        </div>
-        <div class="col-md-5">
-          <!-- Length of stay -->
-          <div id="bubble"></div>
+      <div class="column">
+       <div class="col-md-12">
+          <div id="bars"></div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-5">
-          <!-- PPPD Expenditure per person chart -->
-          <div id="bar">
+      <div class="col-md-6">
+        <div id="impres_bars"></div> 
       </div>
-      <div class="col-md-5">
-          <!-- crime chart -->
-          <div id="line"><div>
+      <div class="col-md-6">
+        <div id="line"></div>
       </div>
     </div>
-
   </div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="{{ url_for('static', filename='js/yearlyVisitors.js') }}"></script>
+<script src="{{ url_for('static', filename='js/crimeData.js') }}"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+<script src="{{ url_for('static', filename='js/activitiesPerIsland.js') }}"></script>
+<script src="{{ url_for('static', filename='js/islandImpres.js') }}"></script>
 </body>
 
 </html>

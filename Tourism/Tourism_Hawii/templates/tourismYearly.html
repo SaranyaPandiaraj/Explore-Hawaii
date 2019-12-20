@@ -85,47 +85,67 @@
     </div>
   </header>
   <br/><br/><br/><br/><br/><br/><br/><br/>
-  <div class="container">
+ 
     <!-- first row -->
+  <div class="conatiner">
     <div class="row">
-        <div class="col-md-12 col-lg-12 ">
-            <div class="btn-group-lg">
+        <div class="col-md-12 col-lg-12">
+            <!-- <h2>Yearly-Tourism statistics</h2> -->
+            <div class="btn-group-lg ">
                 <button type="button" onClick="window.location.href='/'">Home</button>
-                <button type="button" onClick="window.location.href='/tourismYearly'">Tuorism-Yearly</button>
-                <button type="button" onClick="window.location='/VisitorStatistics'">Visitor Statistics</button>
-                <button type="button" onClick="window.location.href='/tourismLanai'">Island Statistics</button>
-                <button type="button" onClick="window.location.href='/tourismHawiiIsland'">Maps</button>     
-              </div>
-            
-    <div class="row">
-        <div class="col-md-12  jumbotron text-center">
-          <h2>Yearly-Tourism statistics</h2>
-          <div class="col-md-12 ">
-            <h4>Select Year</h24>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          </div>
+                <button type="button" onClick="window.location.href='/tourismYearly'">Yearly Statistics</button>
+                <button type="button" onClick="window.location='/visitorStatistics'">Visitor Statistics</button>
+                <button type="button" onClick="window.location.href='/tourismislandstats'">Island Statistics</button>
+                <!-- <button type="button" onClick="window.location.href='/tourismHawiiIsland'">Maps</button>      -->
+            </div>
         </div>
     </div>
+            
+    <div class="row">
+        <div class="col-md-12">
+          <h3>Yearly-Tourism statistics</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 align=center">
+          <h4>Select Year</h24>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+    </div>
+        <!-- </div>
+    </div> -->
        <!-- second row of graphs -->
     <div class="row">
        <div class="col-md-6">
-         <!--Market Compostion plot  -->
+         <!-- yearly visitor -->
           <div id="pie"></div>
        </div>
+       <div class="col-md-6">
+          <!--Market Compostion plot  -->
+           <div id="los_plot"></div>
+        </div>
     </div>
+    <!-- <div class="row">
+        <div class="col-md-4">
+          
+           <div id="bubble"></div>
+        </div> -->
     
-    
+    </div> 
+  </div> 
          
-  </div>
+  
 
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="{{ url_for('static', filename='js/yearlyVisitors.js') }}"></script>
+<script src="{{ url_for('static', filename='js/market.js') }}"></script>
+<script src="{{ url_for('static', filename='js/stay_length.js') }}"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 <!-- <script src="{{ url_for('static', filename='js/yearlyVisitors.js') }}"></script> -->
-<!-- <script src="{{ url_for('static', filename='js/crimeData.js') }}"></script> -->
-<script src="{{ url_for('static', filename='js/market.js') }}"></script>
+<!-- <script src="{{ url_for('static', filename='js/stay_length.js') }}"></script> -->
+<!-- <script src="{{ url_for('static', filename='js/market.js') }}"></script> -->
 
 
 
