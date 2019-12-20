@@ -231,24 +231,11 @@ def reviews_comments(neighborhood):
 
 #Tourism Routes
 
-@app.route("/Tourism")
-def Tourism():
+@app.route("/TourismDashboard")
+def TourismDashboard():
     """Return the homepage."""
-    return render_template("Tourism_Statistics.html")
+    return render_template("TourismDashboard.html")
 
-
-@app.route("/TourismYearly")
-def tourismyearly():
-    return render_template("TourismYearly.html")
-	
-@app.route("/visitorStatistics")
-
-def visitorStatistics():
-    return render_template("VisitorStatistics.html")
-	
-@app.route("/Tourismislandstats")
-def tourismislandstats():
-    return render_template("Tourismisland_stats.html")
     
 if __name__ == "__main__":
     app.run()
