@@ -1,1 +1,1 @@
-<?php include_once("Hawaii.html"); ?>
+<?php include_once("index.html"); ?>
