@@ -1,3 +1,5 @@
+color_code = [0, 1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,45,46,47,48,49,50]
+
 function crimeplot(){
   var Maui_data=[];
   var Hawaii_data=[];
@@ -86,6 +88,7 @@ function crimeplot(){
       title: "ACTUAL INDEX OFFENSES KNOWN TO THE POLICE",
       xaxis: { title: "Year" },
       yaxis: { title: "number of cases per capita" },
+	  titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
       //height:500,
       //width:500
     };
@@ -144,13 +147,14 @@ function expenditure(){
     var Seattle_exp_2016=Seattle_data_2016.map(i =>i.Expenditures);
     var Phonix_exp_2016=Phonix_data_2016.map(i =>i.Expenditures);
     }
-  console.log(Honolulu_exp);
+  //console.log(Honolulu_exp);
 
     var trace1={
       x: category,
       y: Maui_exp,
       name: "Maui",
-      type:"bar"
+      type:"bar",
+	 
     };
     var trace2={
       x: category,
@@ -175,6 +179,7 @@ function expenditure(){
       title: "VISITOR EXPENDITURES by place",
       width:500,
       height:600,
+	  titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
     }
     Plotly.newPlot("exp_bars",data,layout)
 
@@ -228,6 +233,7 @@ function expenditure(){
       yaxis: { title: "expenditures" },
       height:600,
       width: 500,
+	  titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
     };
 
   // Plot the chart to a div tag with id "plot"
@@ -259,7 +265,7 @@ function activities(){
       transportation.push(tvData[i].transportation);
 
     }
-    console.log(transportation);
+    //console.log(transportation);
 
     var trace1={
       x: island,
@@ -309,7 +315,8 @@ function activities(){
     // width:1500,
       width:1000,
       height:500,
-      legend: {position:"right", maxLines:3}
+      legend: {position:"right", maxLines:3},
+	  titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
 
     }
     Plotly.newPlot("bars",data,options)
@@ -509,10 +516,6 @@ Plotly.d3.csv("/static/js/islandImpres.csv", function(data) {
     }
     
   }
-  console.log(c7);
-  console.log(b7);
-  console.log(d7);
-  console.log(a7);
 
 
   Plotly.newPlot(
@@ -662,7 +665,7 @@ Plotly.d3.csv("/static/js/islandImpres.csv", function(data) {
     ],
     {
       barmode: "stack",
-      title: "USWest,USEast and Japan Visitors-Experience",
+      title: "US-West,US-East and Japan Visitors-Experience", titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},width:750,
       xaxis: {
         domain: [0, 0.14],
         anchor: 'x1', title: 'Oahu'
@@ -758,7 +761,8 @@ var data = [{
 var layout = {
   title: "Visitors Arrival Yearly",
   height:500,
-  width: 500
+  width: 500,
+  titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
 };
 
 // var PANEL = d3.select("#pie");
@@ -781,7 +785,7 @@ function lengthstayplot(sample){
   var Oahu = [];
   
   sample = +sample;
-  console.log(sample)
+  //console.log(sample)
   for(var i =0;i<retrived.length;i++){
      //kona.push(retrived.length)
      
@@ -797,10 +801,10 @@ function lengthstayplot(sample){
        year.push(Math.round(retrived[i].Year))
        
    }
-   //console.log()
+  
    
    }
-   console.log(year);
+  
  
    var trace1 = {
      x: year,
@@ -808,8 +812,8 @@ function lengthstayplot(sample){
      type: "bar",
      name: "kona",
      marker: {
-       color: "#2077b4",
-       symbol: "hexagram"
+				color: "Jet",
+				symbol: "hexagram"
      }
    };
    var trace2 = {
@@ -880,14 +884,14 @@ function lengthstayplot(sample){
      xaxis: { title: "Year" },
      yaxis: { title: "Length of stay" },
      height:500,
-     width:500
+     width:500,
+	 titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'}
    };
  
    // Plot the chart to a div tag with id "plot"
    Plotly.newPlot("los_plot", data, layout);
    
-   // console.log(kona);
-   // console.log(Hilo);
+  
 
  
  //text.on("change", handleSubmit); 
@@ -938,6 +942,7 @@ function animation(){
           size: data.marker.size.slice(),
           sizemode: 'area',
           sizeref: 200000
+          
         }
       });
     }
@@ -949,7 +954,7 @@ function animation(){
           return getData(years[i], island);
         })
       })
-    console.log(frames)
+   // //console.log(frames)
     }
     var sliderSteps = [];
     for (i = 0; i < years.length; i++) {
@@ -965,6 +970,7 @@ function animation(){
     }
     var layout = {
       width:1000,
+	  titlefont: { family: 'Comic Sans MS,Comic Sans,CourierNew, monospace',size: 19, color: '#7f7f7f'},
       yaxis: {
         title: 'Number of visiters'
       },
@@ -1025,7 +1031,7 @@ function init(){
     //if (error) return console.warn(error);
     var yearData = {};
     some=islanddata.year;
-    console.log(some);
+    //console.log(some);
     function getData(year) {
       var byYear;
       if (!(byYear = yearData[year])) {;
@@ -1037,13 +1043,12 @@ function init(){
       getData(datum.year);
       }
       var years = Object.keys(yearData);
-      console.log(years);
+      //console.log(years);
       years=years.slice(-10)
       years.reverse();
         
       // cast the data from the csv as numbers
-      console.log(years);
-      //years=[2018,2017,2016,2015,2014,2013,2012,2011,2010,2009];
+    
       years.forEach(function(data) {
       selector
           .append("option")
@@ -1051,8 +1056,7 @@ function init(){
           .property("value",data);
       });
       const firstYear = years[0];
-      console.log(firstYear);
-      console.log(years);
+
       
       yearlyVisitors(firstYear);
       

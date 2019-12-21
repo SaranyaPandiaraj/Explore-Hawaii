@@ -1,7 +1,7 @@
 
 .jumbotron {
 	
-background-image:url("/static/images/airbnb.png");
+background-image:url("/static/images/hawaii_1.jpg");
 background-position: center; /* Center the image */
 background-size: cover; /* Resize the background image to cover the entire container */
 font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -11,10 +11,10 @@ color:white;
 #list, #host, #review {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	text-align:center;
-	background-image:url("/static/images/airbnb.png");
-background-position: center; /* Center the image */
+	background-image:url("/static/images/hawaii_1.jpg");
+background-position: bottom; /* Center the image */
 background-repeat: no-repeat;
-background-size: cover;
+
 	color: white;
 	
 
@@ -83,17 +83,17 @@ td {
   color: white;
   font-weight:bold;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 300px;
+  font-size: 25px;
+  padding: 5px;
+  width: 325px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-    background-image:url("/static/images/airbnb.png");
-background-position: center; /* Center the image */
+    background-image:url("/static/images/hawaii_1.jpg");
+background-position: bottom; /* Center the image */
 background-repeat: no-repeat;
-background-size: cover;
+
 }
 
 
@@ -104,6 +104,7 @@ background-size: cover;
   position: relative;
   transition: 0.5s;
 }
+
 
 .button span:after {
   content: '\00bb';
@@ -150,6 +151,12 @@ background-size: cover;
 .select-css::-ms-expand {
 	display: none;
 }
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 .select-css:hover {
 	border-color: #888;
 }

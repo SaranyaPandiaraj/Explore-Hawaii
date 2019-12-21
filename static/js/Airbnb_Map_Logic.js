@@ -14,7 +14,7 @@ var Features_Info = L.geoJSON(airbnb_data,{
 					},
 					pointToLayer:function(Data,latlng){
 						return new L.circle(latlng,{
-							radius: Data.properties.calculated_host_listings_count * 20,
+							radius: Data.properties.calculated_host_listings_count * 15,
 							fillColor: Colour(Data.properties.calculated_host_listings_count),
 							fillOpacity:.7,
 							stroke:false,
