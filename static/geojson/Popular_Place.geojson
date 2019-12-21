@@ -1,0 +1,258 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.2885,19.4194 ]
+    },
+    "properties": {
+    "place":"Hawaii Volcanoes National Park",
+    "information":"This is one of the most geologically interesting national parks in the United States, home to two active volcanoes that allow visitors to see the wonder of nature in action. Visitors should be aware that various parts of the park and surrounding area, including roads, may be closed during periods of volcanic activity."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.1552,20.7204 ]
+    },
+    "properties": {
+    "place":"HALEAKALA NATIONAL PARK",
+    "information":"Haleakala Park covers 33,265 acres of which more than half is wilderness. It is a designated International Biosphere Reserve. Within the park is the dormant Haleakala Volcano. "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.6938,21.269 ]
+    },
+    "properties": {
+    "place":"Hanauma Bay",
+    "information":"Hanauma Bay is a Nature Preserve and a very popular and very crowded snorkeling spot on Oahu. The sheltered bay harbors a coral reef that is home to a huge variety of fish."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.1094,19.7193 ]
+    },
+    "properties": {
+    "place":"Rainbow Falls",
+    "information":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8071,21.2549 ]
+    },
+    "properties": {
+    "place":"Diamond Head Beach Park",
+    "information":"Although the beach is not very good for swimming due to the sharp and rocky reef near the shore, Diamond Head Beach Park is a surfers hotsp"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.6392,22.1667 ]
+    },
+    "properties": {
+    "place":"Na Pali Coast",
+    "information":"This rugged coast will leave you breathless as you gaze upon the pali (high cliffs) that  rise as much as 4,000 feet (1,200 m) above the Pacific Ocean,  sea caves, lush green valleys and cascading waterfalls that journey to the shores from from thousands of feet above."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -158.0403,21.6743 ]
+    },
+    "properties": {
+    "place":"Sunset Beach",
+    "information":"Sunset Beach is another popular surfing spot during the winter and a swimming and snorkeling paradise during the summer when the water is usually calm."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.6617,22.0715 ]
+    },
+    "properties": {
+    "place":"Waimea Canyon State Park",
+    "information":"It is the largest canyon in the Pacific and will undoubtedly capture your gaze, with its 10 mile long stretch at a mile wide and measuring more than 3,500 feet deep."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.9369,21.3662 ]
+    },
+    "properties": {
+    "place":"Pearl Harbor",
+    "information":"If you want to learn about Hawaii’s World War Two history, a visit to Pearl Harbor is a “must-do”."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -159.402,22.2317 ]
+    },
+    "properties": {
+    "place":"Kilauea Lighthouse and Wildlife refuge",
+    "information":"The ocean cliffs and tall grassy slopes of a dormant volcano provide a protective breeding ground for many Hawaiian seabirds."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8588,21.3068 ]
+    },
+    "properties": {
+    "place":"Iolani Palace",
+    "information":"There is a small, free museum about old Hawaiian law inside."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.4954,20.631 ]
+    },
+    "properties": {
+    "place":"MOLOKONI CRATER",
+    "information":"It is a volcanic atoll (ring-shaped coral reef) off the south coast of Maui."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.5864,20.1151 ]
+    },
+    "properties": {
+    "place":"Waipio Valley and Overlook",
+    "information":"This incredibly beautiful valley on the northeastern coast of the Big Island, about 50 miles north of Hilo, has often been described as a sort of \"Shangri La,\" almost cut off from the outside world. The valley, about one mile wide, dissects the Kohala Mountains and is difficult to reach because of the steep cliffs on the three landward sides. Strong waves make it equally unapproachable from the sea."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.8119,20.8056 ]
+    },
+    "properties": {
+    "place":"Lopa Beach",
+    "information":"It is a long white sand beach."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.8477,21.29 ]
+    },
+    "properties": {
+    "place":"Ala Moana Beach Park",
+    "information":"This half-mile-long piece of tropical paradise is protected by an outer reef, which means the waters are calm and ideal for swimming and paddle boarding."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.9966,20.879 ]
+    },
+    "properties": {
+    "place":"Garden of the Gods",
+    "information":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.7369,21.1644 ]
+    },
+    "properties": {
+    "place":"Halawa Valley",
+    "information":"It is  the oldest Hawaiian settlement."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -156.169468,20.854666 ]
+    },
+    "properties": {
+    "place":"HANA HIGHWAY",
+    "information":"This highway or rather the Hana Millennium Legacy Trail is a route which starts in Paia and continues for 64.4 miles (103.6km) along route #36 and #360 on Maui’s eastern coastline."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.288,19.4199 ]
+    },
+    "properties": {
+    "place":"Jaggar Museum",
+    "information":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.7154,21.3931 ]
+    },
+    "properties": {
+    "place":"Lanikai Beach",
+    "information":" Lanikai has been rated one of the top ten beaches in the world. Its sand is powder soft, the water is clear and turquoise-blue, and the two little islands, the Mokaluas, just offshore are a magnet for photographers."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.156233,19.85325 ]
+    },
+    "properties": {
+    "place":"Akaka Falls",
+    "information":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -155.152186,19.8539 ]
+    },
+    "properties": {
+    "place":"Akaka Falls State Park and Kahuna Falls",
+    "information":"Akaka Falls State Park near Hilo is home to both Akaka Falls and Kahuna Falls. The Akaka Falls are the tallest on the island, free falling 442 feet."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.6727,21.2857 ]
+    },
+    "properties": {
+    "place":"Sandy Beach",
+    "information":"One of the most popular beaches for body boarding and surfing due to its great waves and close shore break."
+    }
+  }
+]
+}

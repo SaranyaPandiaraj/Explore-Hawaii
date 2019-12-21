@@ -444,7 +444,7 @@ function reviews_rating(neighborhood) {
                 cmax: 50, 
 				cmin: 0, 
 				colorbar: {}, 
-				colors:  Pie_Col,
+				colors	:  Pie_Col,
 				colorscale: Col_Scale 
         },
         type: 'box'
@@ -618,7 +618,7 @@ function reviews_comments(neighborhood) {
         
         minLength: 5,
         // Ignore irrelevant words
-        ignore: ["Hawaii","there","would","which","really","host","place","house","could","didn't","definitely","accommodating","about","first","needed","bathroom","bedroom","There","around","great","apartment","kitchen","condo","house","everything","Place","Great","great","during","helpful","downtown","questions","location","located","space","within","visit","their","little","Waikki","Waikiki","Hill","neighborhood","Thanks","Thank","thanks","thank","clean","right","left","recommend","before","after","wonderful","again","hosts","amazing","beautiful","again","airport","arrived","check","other","super","stayed","Needle","excellent","The","arrival","Would","things","perfect","loved","described","exactly","Space","available","Everything","awesome","fantastic","welcome","enough","responsive","absolutely","experience","highly","minute","anyone","studio","extremely","because","while","staying","Carol","Airbnb","better","being","The","every","comfortable","close","though","where","wanted","early","itself","communication","looking","instructions","distance","information","airbnb","short","light","night","lovely","enjoyed"],
+        ignore: ["Hawaii","there","would","which","really","host","place","house","could","didn't","definitely","accommodating","about","first","needed","bathroom","bedroom","There","around","great","apartment","kitchen","condo","house","everything","Place","Great","great","during","helpful","downtown","questions","location","located","space","within","visit","their","little","Waikki","Waikiki","Hill","neighborhood","Thanks","Thank","thanks","thank","clean","right","left","recommend","before","after","wonderful","again","hosts","amazing","beautiful","again","airport","arrived","check","other","super","stayed","Needle","excellent","The","arrival","Would","things","perfect","loved","described","exactly","Space","available","Everything","awesome","fantastic","welcome","enough","responsive","absolutely","experience","highly","minute","anyone","studio","extremely","because","while","staying","Carol","Airbnb","better","being","The","every","comfortable","close","though","where","wanted","early","itself","communication","looking","instructions","distance","information","airbnb","short","light","night","lovely","enjoyed","Honolulu","having","always","lanai","Mahalo","Kauai","island","Princeville","Poipu","Hanalei","Kihei","beach","beaches"],
         
         maxItems: 50,
       
@@ -664,6 +664,23 @@ function reviews_comments(neighborhood) {
   });
 }
 
+function summary(neighborhood) {
+ 
+  var summary_url = `/summary/${neighborhood}`;
+ 
+  d3.json(summary_url).then(function(neighborhood){ 
+   
+    var summary = d3.select("#summary");
+   
+    summary.html("");
+     
+    Object.entries(neighborhood).forEach(function ([key, value]) {
+      var row = summary.append("p");
+      row.text(`${key}: ${value}`);
+    });
+  }
+);
+}
 
 function init() {
   
@@ -689,6 +706,7 @@ function init() {
 	 host_listing(Initial_Neighborhood_Value);
 	 host_visual_pie(Initial_Neighborhood_Value);
 	 host_visual(Initial_Neighborhood_Value);
+	 summary(Initial_Neighborhood_Value);
 	 neighborhood=Initial_Neighborhood_Value;
      set_color();
   });
@@ -706,6 +724,7 @@ function optionChanged(OnClick_Value) {
 	 host_listing(OnClick_Value); 
 	 host_visual_pie(OnClick_Value);
 	 host_visual(OnClick_Value);
+	 summary(OnClick_Value);
      neighborhood=OnClick_Value;
      set_color();
 	 
@@ -714,6 +733,7 @@ function optionChanged(OnClick_Value) {
 function Reviews(OnClick_Value) {
 	reviews_rating(OnClick_Value);
 	reviews_comments(OnClick_Value);
+    neighborhood=OnClick_Value;
 	set_color();
 }
 

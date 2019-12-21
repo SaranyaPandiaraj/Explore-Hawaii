@@ -63,6 +63,12 @@ table {
 background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+.sum {  background-image:url("/static/images/Table2.gif");
+}
+
+.col-md-10 {
+    width: 90%;
+}
 
 .footer-wrapper {
     max-width: 960px;

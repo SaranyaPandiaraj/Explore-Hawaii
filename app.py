@@ -65,7 +65,7 @@ def more():
 @app.route("/Airbnb")   
 def Airbnb():   
     return render_template("Airbnb.html")
-	
+    
 @app.route("/Airbnb_Maps")   
 def Airbnb_Maps():   
     return render_template("Airbnb_Map.html")
@@ -84,7 +84,27 @@ def price(neighborhood):
     price = pd.read_sql("SELECT lp.price, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id  WHERE price < 500",engine)
     price_group = price.loc[(price["neighbourhood_group_cleansed"] == neighborhood),:]
 
-    return jsonify(price_group["price"].tolist())  
+    return jsonify(price_group["price"].tolist()) 
+
+@app.route("/summary/<neighborhood>")
+def summary(neighborhood):
+    
+    summary_keys = ["Price ($) ","Security Deposit ($)", "Accomodates", "Bathrooms", "Bedrooms","Beds"]
+    summary = pd.read_sql("SELECT lp.price,lp.security_deposit,lp.accommodates,lp.bathrooms,lp.bedrooms,lp.beds, pa.neighbourhood_group_cleansed FROM Futuristic_Airbnb_Listings_Property lp inner join Futuristic_Airbnb_Property_Address pa on lp.listing_id = pa.listing_id group by pa.neighbourhood_group_cleansed",engine)
+    summary_group = summary.loc[(summary["neighbourhood_group_cleansed"] == neighborhood),:]
+
+    summ_price = round(summary_group["price"].mean(),2)
+    summ_security_deposit =round(summary_group["security_deposit"].mean(),2)
+    summ_accomodates =round(summary_group["accommodates"].mean(),2)
+    summ_bathrooms =round(summary_group["bathrooms"].mean(),2)
+    summ_bedrooms =round(summary_group["bedrooms"].mean(),2)
+    summ_beds = round(summary_group["beds"].mean(),2)
+
+    summ = [summ_price,summ_security_deposit,summ_accomodates,summ_bathrooms,summ_bathrooms,summ_bedrooms,summ_beds]
+
+     
+    summ_dict = dict(zip(summary_keys,summ))
+    return jsonify(summ_dict) 
 
 @app.route("/security_deposit/<neighborhood>")
 def security_deposit(neighborhood):

@@ -2,6 +2,8 @@ d3.json("/static/geojson/Airbnb.geojson", function(json_data) {
 	 
 var airbnb_data = json_data.features;
 
+
+
 var Features_Info = L.geoJSON(airbnb_data,{
 					onEachFeature: function(Data,layer){
 						layer.bindPopup(`<h2> <center>${Data.properties.name} </center></h2>\
@@ -41,6 +43,36 @@ var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles
 accessToken: API_KEY
 });
 
+var LeafIcon = L.Icon.extend({
+    options: {
+       iconSize:     [45, 45],
+       shadowSize:   [45, 45],
+       iconAnchor:   [45, 45],
+       shadowAnchor: [45, 45],
+       popupAnchor:  [-45, -45]
+    }
+});
+
+var greenIcon = new LeafIcon({
+    iconUrl: 'https://cdn3.iconfinder.com/data/icons/nature-emoji/50/Island-512.png',
+    shadowUrl: 'https://cdn3.iconfinder.com/data/icons/nature-emoji/50/Island-512.png'
+})
+
+var LeafIcon1 = L.Icon.extend({
+    options: {
+       iconSize:     [35, 35],
+       shadowSize:   [35, 35],
+       iconAnchor:   [35, 35],
+       shadowAnchor: [35, 35],
+       popupAnchor:  [-35, -35]
+    }
+});
+
+var greenIcon1 = new LeafIcon1({
+    iconUrl: 'https://cdn4.iconfinder.com/data/icons/map-pins-2/256/21-512.png',
+    shadowUrl: 'https://cdn4.iconfinder.com/data/icons/map-pins-2/256/21-512.png'
+})
+
 var baseMaps = {
 	"Outdoors": outdoors,
 	"Satellite": satellite,
@@ -49,16 +81,18 @@ var baseMaps = {
 };
 
 var Rest_Cafe = new L.LayerGroup();
+var Popular_Places = new L.LayerGroup();
 
 var overlayMaps ={
 	"Popular Airbnb Listings": Features_Info,
-	"Popular Rest/Cafe": Rest_Cafe
+	"Popular Rest/Cafe": Rest_Cafe,
+    "Popular Places in Hawaii":Popular_Places
 };
 
 var map = L.map("map", {
 	center: [20.9933, -156.33],
 	zoom: 8,
-	layers: [outdoors, Features_Info, Rest_Cafe]
+	layers: [outdoors, Features_Info]
 }); 
 
 d3.json("/static/geojson/Rest_Cafe.geojson", function(Rest_Cafe_Data) {
@@ -69,10 +103,32 @@ d3.json("/static/geojson/Rest_Cafe.geojson", function(Rest_Cafe_Data) {
 						<h3>Category : ${Data.properties.category}</h3>\
 						<h3>Address : ${Data.properties.address}</h3>`);
 					},
-		color:"orange",
-		weight:1.5
+		pointToLayer:function(Data,latlng){
+						return new L.marker(latlng,{
+							icon: greenIcon1,
+						})
+					}
 	})
 	.addTo(Rest_Cafe);
+});
+
+d3.json("/static/geojson/Popular_Place.geojson", function(Pop_Place_Data) {
+	L.geoJSON(Pop_Place_Data,{onEachFeature: function(Data,layer){
+						layer.bindPopup(`<h2> <center>${Data.properties.place} </center></h2>\
+											<hr><h3>${Data.properties.information}</h3>`);
+
+					},
+
+			pointToLayer:function(Data,latlng){
+						return new L.marker(latlng,{
+							icon: greenIcon,
+						})
+					}
+	})
+
+ 
+	.addTo(Popular_Places);
+
 });
 
 
