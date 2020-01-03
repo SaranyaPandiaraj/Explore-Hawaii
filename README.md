@@ -3,7 +3,7 @@ To Develop an Interactive Travel Guide Website to explore the places and plan va
 
 # Team Members
 1) Saranya 
-2) Madhavi
+2) Madhavi Namballa
 3) Olga
 4) Vaishnavi
 
